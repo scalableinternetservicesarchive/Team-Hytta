@@ -1,6 +1,6 @@
 # Hytteboka
 
-Hytteboka is a project that demonstrates some ....
+Hytteboka is a website where people can register their cabin and have guest write a comment after visiting the cabin, like an online guestbook. Each cabin should have each own profile, with picture, address, info etc. One user could be the owner of more than one cabin and one cabin could have more than one owner
 
 [PivotalTracker](https://www.pivotaltracker.com/s/projects/1193870)
 
