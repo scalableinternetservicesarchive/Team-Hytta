@@ -7,8 +7,10 @@ Hytteboka is a website where people can register their cabin and have guest writ
 ## Team Hytta
 
 Astri Marie Ravnaas, https://github.com/astrimra, astri.marie.ravnaas@gmail.com
+![astrimra photo](https://avatars1.githubusercontent.com/u/3863570?v=2&s=400)
 
 Marianne Melhoos, https://github.com/melhoos, mmelhoos@gmail.com
+![astrimra photo](https://avatars1.githubusercontent.com/u/5463731?v=2&s=400)
 
 Terje Kristoffer Skow ([@tkskow] (https://github.com/tkskow))
 ![tkskow photo](https://avatars2.githubusercontent.com/u/3807482?v=2&s=140)
