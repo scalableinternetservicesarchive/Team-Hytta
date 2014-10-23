@@ -1,0 +1,29 @@
+<%= form_for(@cabin) do |f| %>
+  <% if @cabin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cabin.errors.count, "error") %> prohibited this cabin from being saved:</h2>
+
+      <ul>
+      <% @cabin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :navn %><br>
+    <%= f.text_field :navn %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :descritpion %><br>
+    <%= f.text_area :descritpion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
