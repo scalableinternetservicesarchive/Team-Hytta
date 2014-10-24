@@ -1,4 +1,4 @@
-# Hytteboka
+ls# Hytteboka
 
 Hytteboka is a website where people can register their cabin and have guest write a comment after visiting the cabin, like an online guestbook. Each cabin should have each own profile, with picture, address, info etc. One user could be the owner of more than one cabin and one cabin could have more than one owner
 
@@ -6,10 +6,10 @@ Hytteboka is a website where people can register their cabin and have guest writ
 
 ## Team Hytta
 
-Astri Marie Ravnaas, https://github.com/astrimra, astri.marie.ravnaas@gmail.com
+Astri Marie Ravnaas, ([@astrimra] (https://github.com/astrimra)) 
 ![astrimra photo](https://avatars1.githubusercontent.com/u/3863570?v=2&s=400)
 
-Marianne Melhoos, https://github.com/melhoos, mmelhoos@gmail.com
+Marianne Melhoos, ([@melhoos] (https://github.com/melhoos))
 ![astrimra photo](https://avatars1.githubusercontent.com/u/5463731?v=2&s=400)
 
 Terje Kristoffer Skow ([@tkskow] (https://github.com/tkskow))
