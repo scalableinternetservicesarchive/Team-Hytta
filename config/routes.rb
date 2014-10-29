@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'cabins#index'
+
   resources :posts
 
   resources :cabins

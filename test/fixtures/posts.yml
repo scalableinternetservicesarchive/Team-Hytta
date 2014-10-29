@@ -3,9 +3,9 @@
 one:
   title: MyString
   message: MyText
-  cabin_id: 
+  cabin_id: 1
 
 two:
   title: MyString
   message: MyText
-  cabin_id: 
+  cabin_id: 2
