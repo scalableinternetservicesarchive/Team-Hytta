@@ -21,17 +21,18 @@ class CabinsController < ApplicationController
   def create
     @cabin = Cabin.new(cabin_params)
     @cabin.save
-    respond_with(@cabin)
+    #respond_with(@cabin)
   end
 
   def update
     @cabin.update(cabin_params)
-    respond_with(@cabin)
+    render :show
+    #respond_with(@cabin)
   end
 
   def destroy
     @cabin.destroy
-    respond_with(@cabin)
+    #respond_with(@cabin)
   end
 
   private
