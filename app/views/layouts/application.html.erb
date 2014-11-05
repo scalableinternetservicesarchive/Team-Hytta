@@ -32,22 +32,15 @@
 
           </form>
           <% end %>
+
+          <%= link_to "Forgot your password?", new_password_path(resource_name) %>
     </div>
   </div>
   </div>
 
 
-
     <div class="container">
     <%= yield %>
-
-     <% if user_signed_in? %>
-        <%= link_to 'Log Out', destroy_user_session_path,
-                    method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
-     <% else %>
-         <%= link_to 'Log In', new_user_session_path, class: 'btn btn-info btn-sm' %> |
-         <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-info btn-sm' %>
-     <% end %>
     </div>
     
 </body>
