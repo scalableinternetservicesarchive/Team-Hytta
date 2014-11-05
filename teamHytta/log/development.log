@@ -1,6 +1,10 @@
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-10-23 15:54:09 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2014-10-23 16:19:54 -0700
+>>>>>>> master
 
 ActiveRecord::PendingMigrationError (
 
@@ -36,6 +40,7 @@ Migrations are pending. To resolve this issue, run:
   rack (1.5.2) lib/rack/lock.rb:17:in `call'
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+<<<<<<< HEAD
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -53,6 +58,25 @@ Migrating to DeviseCreateUsers (20141023212514)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
   [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+=======
+  /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20141023212514)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+>>>>>>> master
   [1m[35m (0.1ms)[0m              SELECT sql
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
@@ -61,11 +85,24 @@ Migrating to DeviseCreateUsers (20141023212514)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141023212514"]]
   [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
+=======
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141023212514"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCabins (20141023231004)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "cabins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "navn" varchar(255), "address" varchar(255), "descritpion" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141023231004"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+>>>>>>> master
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
@@ -83,6 +120,7 @@ Migrating to DeviseCreateUsers (20141023212514)
 
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-10-23 15:55:07 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -1532,3 +1570,93 @@ ActionController::RoutingError (No route matches [GET] "/posts"):
   Rendered /Users/marianne/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
   Rendered /Users/marianne/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms)
   Rendered /Users/marianne/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.3ms)
+=======
+Started GET "/" for 127.0.0.1 at 2014-10-23 16:20:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/railties-4.1.6/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cabins" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+Processing by CabinsController#index as HTML
+  [1m[35mCabin Load (0.1ms)[0m  SELECT "cabins".* FROM "cabins"
+  Rendered cabins/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 863ms (Views: 862.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-23 16:20:29 -0700
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-23 16:20:49 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 51ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-23 16:24:18 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHHN1uFNjvxjMmgUntz0yjnZktpbrKgxAuG0YQOQDq4=", "user"=>{"email"=>"dsdjkh@kdjf.no", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'dsdjkh@kdjf.no'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 6ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHHN1uFNjvxjMmgUntz0yjnZktpbrKgxAuG0YQOQDq4=", "user"=>{"email"=>"dsdjkh@kdjf.no", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 113ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-23 16:24:26 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-10-23 16:24:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/registrations/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-23 16:24:45 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-10-23 16:24:46 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/shared/_links.html.erb (0.2ms)
+  Rendered /Users/astrimarieravnaas/.rvm/gems/ruby-2.1.3/gems/devise-3.4.0/app/views/devise/registrations/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cabins" for 127.0.0.1 at 2014-10-23 16:24:57 -0700
+Processing by CabinsController#index as HTML
+  [1m[35mCabin Load (0.1ms)[0m  SELECT "cabins".* FROM "cabins"
+  Rendered cabins/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cabins/new" for 127.0.0.1 at 2014-10-23 16:31:04 -0700
+Processing by CabinsController#new as HTML
+  Rendered cabins/_form.html.erb (6.5ms)
+  Rendered cabins/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+>>>>>>> master

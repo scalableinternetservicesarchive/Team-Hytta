@@ -1,13 +1,47 @@
-<h1>Listing cabins</h1>
+<table>
+
+  <thead>
+      <th colspan="3">My Cottages</th>
+  </thead>
+  <tbody>
+    <% @cabins.each do |cabin| %>
+    <tr>
+      <td><%= cabin.navn %></td>
+        <td><%= cabin.address %></td>
+        <td><%= cabin.descritpion %></td>
+        <td><%= link_to 'Show', cabin, class: 'btn btn-info btn-sm' %></td>
+        <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
+        <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+
+<br>
+
+<%= link_to 'New Cabin', new_cabin_path, class: 'btn btn-info' %>
+
+<%= link_to 'Posts', posts_path, class: 'btn btn-info' %>
+</br>
+
+
+
+
+
+
+
+
+<!--
 
 <table>
   <thead>
-    <tr>
-      <th>Navn</th>
-      <th>Address</th>
-      <th>Descritpion</th>
-      <th colspan="3"></th>
-    </tr>
+    <ul>
+        <th>Navn</th>
+        <th>Address</th>
+        <th>Descritpion</th>
+      </ul>
   </thead>
 
   <tbody>
@@ -29,3 +63,5 @@
 <%= link_to 'New Cabin', new_cabin_path, class: 'btn btn-info' %>
 
 <%= link_to 'Posts', posts_path, class: 'btn btn-info' %>
+
+-->
