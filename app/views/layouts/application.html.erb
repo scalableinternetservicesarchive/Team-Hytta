@@ -10,16 +10,35 @@
 </head>
 <body>
 
-<div class="container">
-<%= yield %>
+  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        
+            <% if user_signed_in? %>
+              <%= link_to 'Log Out', destroy_user_session_path,
+                    method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm navbar-right' %>
+            <% else %>
+              <%= link_to 'Log In', new_user_session_path, class: 'btn btn-info btn-sm navbar-right' %> |
+              <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-info btn-sm navbar-right' %>
+            <% end %>
 
- <% if user_signed_in? %>
-    <%= link_to 'Log Out', destroy_user_session_path,
-                method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
- <% else %>
-     <%= link_to 'Log In', new_user_session_path, class: 'btn btn-info btn-sm' %> |
-     <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-info btn-sm' %>
- <% end %>
-</div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="container">
+    <%= yield %>
+
+     <% if user_signed_in? %>
+        <%= link_to 'Log Out', destroy_user_session_path,
+                    method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
+     <% else %>
+         <%= link_to 'Log In', new_user_session_path, class: 'btn btn-info btn-sm' %> |
+         <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-info btn-sm' %>
+     <% end %>
+    </div>
+    
 </body>
 </html>
