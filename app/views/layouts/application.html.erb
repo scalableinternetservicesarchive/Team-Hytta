@@ -11,33 +11,35 @@
 <body>
 
   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container navbar-left">
-      <%= link_to " ", root_path, class: "glyphicon glyphicon-home" %>
+    <div class="container">
+    <div class="navbar-left">
+
+       <%= link_to " ", root_path, type:"button",class: "glyphicon glyphicon-home btn-lg" %>
+
+         </div>
+
+    <div class="navbar-right">
+
+          <% if user_signed_in? %>
+            <%= link_to 'Log Out', destroy_user_session_path,
+                  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm navbar-right' %>
+          <% else %>
+          <form accept-charset="UTF-8" action="/users/sign_in" class="new_user navbar-form navbar-right" id="new_user" method> 
+            <div class="form-group">
+
+              <input autofocus="autofocus" placeholder="Email" id="user_email" name="user[email]" type="email" value>
+
+            </div>
+            <div class="form-group">
+              <input autocomplete="off" placeholder="Password" id="user_password" name="user[password]" type="password">
+            </div>
+
+            <input name="commit" type="submit" value="Log in">
+
+          </form>
+          <% end %>
     </div>
-    <div class="container navbar-center">
-      <div class="navbar-header ">
-
-            <% if user_signed_in? %>
-              <%= link_to 'Log Out', destroy_user_session_path,
-                    method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm navbar-right' %>
-            <% else %>
-            <form accept-charset="UTF-8" action="/users/sign_in" class="new_user navbar-form navbar-right" id="new_user" method> 
-              <div class="form-group">
-
-                <input autofocus="autofocus" placeholder="Email" id="user_email" name="user[email]" type="email" value>
-
-              </div>
-              <div class="form-group">
-                <input autocomplete="off" placeholder="Password" id="user_password" name="user[password]" type="password">
-              </div>
-
-              <input name="commit" type="submit" value="Log in">
-
-            </form>
-            <% end %>
-
-      </div>
-    </div>
+  </div>
   </div>
 
 
