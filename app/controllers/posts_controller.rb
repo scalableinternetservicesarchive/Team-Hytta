@@ -1,18 +1,19 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json
 
   def index
     @posts = Post.all
-    #respond_with(@posts)
+    respond_with @posts
   end
 
   def show
-    #respond_with(@post)
+    respond_with @post
   end
 
   def new
     @post = Post.new
-    #respond_with(@post)
+    respond_with @post
   end
 
   def edit
@@ -21,19 +22,17 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.save
-    render :show
-    #respond_with(@post)
+    respond_with @post
   end
 
   def update
     @post.update(post_params)
-    render :show
-    #respond_with(@post)
+    respond_with @post
   end
 
   def destroy
     @post.destroy
-    #respond_with(@post)
+    respond_with @post
   end
 
   private

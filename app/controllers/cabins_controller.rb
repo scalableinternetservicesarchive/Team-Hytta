@@ -1,18 +1,19 @@
 class CabinsController < ApplicationController
   before_action :set_cabin, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :json
 
   def index
     @cabins = Cabin.all
-    #respond_with(@cabins)
+    respond_with @cabins
   end
 
   def show
-    #respond_with(@cabin)
+    respond_with @cabin
   end
 
   def new
     @cabin = Cabin.new
-    #respond_with(@cabin)
+    respond_with @cabin
   end
 
   def edit
@@ -20,19 +21,19 @@ class CabinsController < ApplicationController
 
   def create
     @cabin = Cabin.new(cabin_params)
-    @cabin.save
-    #respond_with(@cabin)
+    flash[:notice] = 'Cabin was successfully created. ' if @cabin.save
+    respond_with @cabin
   end
 
   def update
     @cabin.update(cabin_params)
-    render :show
-    #respond_with(@cabin)
+    respond_with @cabin
   end
 
   def destroy
     @cabin.destroy
-    #respond_with(@cabin)
+    flash[:notice] = 'Cabin was successfully destroyed. '
+    respond_with @cabin
   end
 
   private
