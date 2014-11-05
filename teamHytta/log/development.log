@@ -1,7 +1,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-10-23 15:54:09 -0700
+=======
+Started GET "/" for 127.0.0.1 at 2014-10-23 16:19:54 -0700
+>>>>>>> master
 =======
 Started GET "/" for 127.0.0.1 at 2014-10-23 16:19:54 -0700
 >>>>>>> master
@@ -41,6 +45,7 @@ Migrations are pending. To resolve this issue, run:
   rack (1.5.2) lib/rack/content_length.rb:14:in `call'
   rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
 <<<<<<< HEAD
+<<<<<<< HEAD
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/marianne/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -59,6 +64,8 @@ Migrating to DeviseCreateUsers (20141023212514)
   [1m[35m (0.7ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
   [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
 =======
+=======
+>>>>>>> master
   /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /Users/astrimarieravnaas/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -76,6 +83,9 @@ Migrating to DeviseCreateUsers (20141023212514)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
   [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
   [1m[35m (0.1ms)[0m              SELECT sql
             FROM sqlite_master
@@ -86,12 +96,15 @@ Migrating to DeviseCreateUsers (20141023212514)
             WHERE name='index_users_on_email' AND type='index'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141023212514"]]
   [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
 =======
+=======
+>>>>>>> master
   [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
   [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141023212514"]]
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
@@ -102,6 +115,7 @@ Migrating to CreateCabins (20141023231004)
   [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
+<<<<<<< HEAD
 >>>>>>> master
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
@@ -402,6 +416,8 @@ Migrating to CreateCabins (20141023231004)
   [1m[36m (28.2ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36m (0.2ms)[0m  [1m            SELECT sql
+=======
+>>>>>>> master
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
@@ -419,6 +435,7 @@ Migrating to CreateCabins (20141023231004)
 
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-10-23 16:19:13 -0700
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 Processing by Rails::WelcomeController#index as HTML
@@ -1571,6 +1588,8 @@ ActionController::RoutingError (No route matches [GET] "/posts"):
   Rendered /Users/marianne/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms)
   Rendered /Users/marianne/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.3ms)
 =======
+=======
+>>>>>>> master
 Started GET "/" for 127.0.0.1 at 2014-10-23 16:20:20 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -1659,4 +1678,7 @@ Processing by CabinsController#new as HTML
   Rendered cabins/_form.html.erb (6.5ms)
   Rendered cabins/new.html.erb within layouts/application (8.0ms)
 Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
