@@ -34,14 +34,16 @@
         <td><%= post.message %></td>
         <td><%= post.cabin.navn %></td>
         <td><%= link_to 'Show', post, class: 'btn btn-info btn-sm' %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-warning btn-sm' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post, :cabin_id => @cabin.id), class: 'btn btn-warning btn-sm' %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
+<%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
 
+<br>
 
 <%= link_to 'Edit', edit_cabin_path(@cabin) %> |
 <%= link_to 'Back', cabins_path %>

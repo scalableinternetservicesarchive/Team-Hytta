@@ -19,9 +19,8 @@
     <%= f.label :message %><br>
     <%= f.text_area :message %>
   </div>
-  <div class="field">
-    <%= f.label :cabin_id %><br>
-    <%= f.text_field :cabin_id %>
+  <div >
+    <%= f.hidden_field :cabin_id, :value => params[:cabin_id] %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -10,10 +10,10 @@
   <%= @post.message %>
 </p>
 
-<p>
+<p>	
   <strong>Cabin:</strong>
   <%= @post.cabin.navn %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Edit', edit_post_path(@post, :cabin_id => @post.cabin.id) %> |
+<%= link_to 'Back', @post.cabin %>

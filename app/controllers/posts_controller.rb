@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    respond_with @cabin
   end
 
   def create
