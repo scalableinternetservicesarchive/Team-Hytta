@@ -13,7 +13,7 @@ Marianne Melhoos, ([@melhoos] (https://github.com/melhoos))
 ![astrimra photo](http://oi58.tinypic.com/rr6uxl.jpg)
 
 Terje Kristoffer Skow ([@tkskow] (https://github.com/tkskow))
-![tkskow photo](https://avatars2.githubusercontent.com/u/3807482?v=2&s=140)
+![tkskow photo](https://avatars3.githubusercontent.com/u/3807482?v=2&s=460)
 
 Maja Reimer ([@majareimer] (https://github.com/majareimer))
 ![maja photo](https://avatars2.githubusercontent.com/u/9068262?v=2&s=460)
