@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ body {
+ 	background-image: url('/IMGP6763.jpg');
+  	background-size: cover;
+ 	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+ }

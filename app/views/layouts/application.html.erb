@@ -10,16 +10,36 @@
 </head>
 <body>
 
-<div class="container">
-<%= yield %>
+  <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+    <div class="navbar-left">
 
- <% if user_signed_in? %>
-    <%= link_to 'Log Out', destroy_user_session_path,
-                method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %>
- <% else %>
-     <%= link_to 'Log In', new_user_session_path, class: 'btn btn-info btn-sm' %> |
-     <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-info btn-sm' %>
- <% end %>
-</div>
+       <%= link_to " ", root_path, type:"button",class: "glyphicon glyphicon-home btn-lg" %>
+
+         </div>
+
+    <div class="navbar-right">
+
+          <% if user_signed_in? %>
+            <%= link_to 'Log Out', destroy_user_session_path,
+                  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm navbar-right' %>
+          <% else %>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
+              <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+            <%= f.submit "Log in", class: "btn btn-primary btn-sm"%>
+            <% end %>
+            <div><%= link_to "Forgot your password?", new_password_path(resource_name) %></div>
+          </form>
+          <% end %>
+    </div>
+  </div>
+  </div>
+
+
+    <div class="container">
+    <%= yield %>
+    </div>
+    
 </body>
 </html>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root 'cabins#index'
 
   resources :posts
@@ -7,6 +8,9 @@ Rails.application.routes.draw do
   resources :cabins
 
   devise_for :users
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

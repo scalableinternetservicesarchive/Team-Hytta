@@ -30,7 +30,7 @@
   <tbody>
     <% @cabin.posts.each do |post| %>
       <tr>
-        <td><%= post.title %></td>
+        <td><%= post.title %><br/></td>
         <td><%= post.message %></td>
         <td><%= post.cabin.navn %></td>
         <td><%= link_to 'Show', post, class: 'btn btn-info btn-sm' %></td>
