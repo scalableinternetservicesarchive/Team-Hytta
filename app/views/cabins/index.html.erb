@@ -1,24 +1,85 @@
-<table>
+<center>
+  <div class="row container">
+    <div class="col-md-2">
+      <center>
+        <img src="http://images.techtimes.com/data/images/full/4061/bill-gates-wealthiest-person.jpg?w=600" class="img-responsive img-rounded" alt="Responsive image">
+      </center>
+    </div>  
+    <div class="col-md-10">
+      <center>
+        <div class="row">
+          <h1>My Cottages</h1>
+        </center>
+    </div>
+  </div>
+</center>
 
-  <thead>
-      <th colspan="3">My Cottages</th>
-  </thead>
-  <tbody>
-    <% @cabins.each do |cabin| %>
-    <tr>
-      <td><%= cabin.navn %></td>
-        <td><%= cabin.address %></td>
-        <td><%= cabin.descritpion %></td>
-        <td><%= link_to 'Show', cabin, class: 'btn btn-info btn-sm' %></td>
-        <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
-        <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
-    </tr>
-    <% end %>
-  </tbody>
-
-</table>
+<!--Make spece between Profile Picture and About me Panel -->
+<div class="row container">
+  <br></br>
+</div>
 
 
-<br>
+<div class="row container">
+  <div class="col-md-2">
+<!--About Me Panel-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">About Me</h3>
+      </div>
+      <div class="panel-body">
+        <p>Olav Nordmann</p>
+        <p>olav@nordmann.no</p>
+        <p>+47 909 99 775</p>
+        <p><button type="button" class="btn btn-primary">Settings</button></p>
+      </div>
+    </div>
+  </div>
+<!--Cottage Panel-->
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-body">
 
-<%= link_to 'New Cabin', new_cabin_path, class: 'btn btn-info' %>
+        <div class="col-md-3">
+        <img src="http://betweennapsontheporch.net/wp-content/uploads/2014/09/Beach-Cottage-in-Florida-200x200.jpg" alt="Responsive image img-rounded">
+        </div>
+        <div class="col-md-7">
+        <h4>The Summer Cottage</h4>
+          <p>Her kommer det masse kul tekst</p>
+        </div>
+     </div>
+
+    </div>
+  </div>
+</div>
+
+<!--New Cabin Button-->
+<div class="row container">
+    <div class="col-md-11">
+      <br></br>
+    </div>
+    <div class="col-md-1">
+      <table>
+        <tbody>
+          <% @cabins.each do |cabin| %>
+            <tr>
+              <td><%= cabin.navn %></td>
+              <td><%= cabin.address %></td>
+              <td><%= cabin.descritpion %></td>
+              <td><%= link_to 'Show', cabin, class: 'btn btn-info btn-sm' %></td>
+              <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
+              <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
+            </tr>
+           <% end %>
+         </tbody>
+        </table>
+      </div>
+    <br>
+      <%= link_to 'New Cabin', new_cabin_path, class: 'btn btn-info' %>
+      -->
+  </div>
+</div>
+
+
+
+
