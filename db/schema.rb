@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107011158) do
+ActiveRecord::Schema.define(version: 20141107024148) do
 
   create_table "cabins", force: true do |t|
     t.string   "navn"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(version: 20141107011158) do
     t.text     "descritpion"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
+
+  add_index "cabins", ["user_id"], name: "index_cabins_on_user_id"
 
   create_table "comments", force: true do |t|
     t.text     "message"
@@ -27,10 +30,12 @@ ActiveRecord::Schema.define(version: 20141107011158) do
     t.integer  "parent_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   add_index "comments", ["parent_id"], name: "index_comments_on_parent_id"
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -38,9 +43,11 @@ ActiveRecord::Schema.define(version: 20141107011158) do
     t.integer  "cabin_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   add_index "posts", ["cabin_id"], name: "index_posts_on_cabin_id"
+  add_index "posts", ["user_id"], name: "index_posts_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

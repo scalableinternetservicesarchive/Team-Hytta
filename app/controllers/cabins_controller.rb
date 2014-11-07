@@ -21,6 +21,7 @@ class CabinsController < ApplicationController
 
   def create
     @cabin = Cabin.new(cabin_params)
+    @cabin.user = current_user
     flash[:notice] = 'Cabin was successfully created. ' if @cabin.save
     respond_with @cabin
   end
