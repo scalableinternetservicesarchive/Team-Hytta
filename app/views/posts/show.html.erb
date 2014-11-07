@@ -15,5 +15,23 @@
   <%= @post.cabin.navn %>
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @post.comments.each do |comment| %>
+      <tr>
+        <td><%= comment.message %></td>
+        <td><%= link_to 'Show', comment, class: 'btn btn-info btn-sm' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+<table>
+
 <%= link_to 'Edit', edit_post_path(@post, :cabin_id => @post.cabin.id) %> |
 <%= link_to 'Back', @post.cabin %>
