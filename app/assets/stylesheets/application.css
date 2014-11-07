@@ -20,3 +20,15 @@
 	background-attachment:fixed;
 	background-position:center;
  }
+ 
+ #barLeft{
+  	
+ }
+ 
+ #barRight{
+ 	margin: 19px;
+ }
+ 
+ #home{
+ 	font-size: 3em;
+ }
