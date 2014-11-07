@@ -46,7 +46,16 @@
       <div class="panel-body">
             <p><h4><%= post.title %></h4></p>
             <p><%= post.message %></p>
-            <td><%= link_to 'Show', post, class: 'btn btn-info btn-sm' %></td>
+            <tbody>
+   <tr>
+      <p><h4>Comment</h4></p>
+      <th colspan="3"></th>
+    <% post.comments.each do |comment| %>
+        <p><%= comment.message %></p>
+      </tr>
+       <% end %>
+      </tbody>
+      <br>
         <td><%= link_to 'New Comment', new_comment_path(:post_id => post.id), class: 'btn btn-info btn-sm' %></td>
         <td><%= link_to 'Edit', edit_post_path(post, :cabin_id => @cabin.id), class: 'btn btn-warning btn-sm' %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
@@ -106,7 +115,8 @@
       <br></br>
     </div>
     <div class="col-md-1"></div>
-          <%= link_to 'Back', cabins_path, class: 'btn btn-info' %>
+          <td><%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></td>
+          <td><%= link_to 'Back', cabins_path, class: 'btn btn-info' %></td>
       -->
   </div>
 
