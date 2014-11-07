@@ -12,18 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :navn %><br>
-    <%= f.text_field :navn %>
+    <br>
+    <%= f.text_field :navn, placeholder: "Name", style: "width:400px" %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
+    <br>
+    <%= f.text_field :address, placeholder: "Address", style: "width:400px" %>
   </div>
   <div class="field">
-    <%= f.label :descritpion %><br>
-    <%= f.text_area :descritpion %>
+    <br>
+    <%= f.text_area :descritpion, placeholder: "Description", style: "width:400px" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <br>
+    <%= f.submit "Create Cabin", class: "btn btn-primary btn-sm" %> or 
+    <%= link_to 'Back', cabins_path, class: "btn btn-primary btn-sm" %>
   </div>
 <% end %>
