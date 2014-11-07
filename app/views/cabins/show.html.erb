@@ -1,21 +1,64 @@
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Navn:</strong>
-  <%= @cabin.navn %>
-</p>
+<center>
+  <div class="row container">
+    <div class="col-md-2">
+      <center>
+        <img src="http://betweennapsontheporch.net/wp-content/uploads/2014/09/Beach-Cottage-in-Florida-200x200.jpg" class="img-responsive img-rounded" alt="Responsive image">
+      </center>
+    </div>  
+    <div class="col-md-10">
+      <center>
+        <div class="row">
+          <h1> 
+            <strong>
+            <%= @cabin.navn %>
+            </strong>
+          </h1>
+        </center>
+    </div>
+  </div>
+</center>
 
-<p>
-  <strong>Address:</strong>
-  <%= @cabin.address %>
-</p>
+<!--Make spece between Profile Picture and About me Panel -->
+<div class="row container">
+  <br></br>
+</div>
 
-<p>
-  <strong>Descritpion:</strong>
-  <%= @cabin.descritpion %>
-</p>
+<div class="row container">
+<!--Hytte Pannel-->
+    <div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Hytte Pannel</h3>
+      </div>
+      <div class="panel-body">
+        <p>Her kommer masse artige funksjoner</p>
+        <p><%= link_to 'Edit', edit_cabin_path, class: 'btn btn-info' %></p>
+      </div>
+    </div>
+  </div>
+<!--Cottage Panell-->
+  <div class="col-md-10">
+    <% @cabin.posts.each do |post| %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+            <p><h4><%= post.title %></h4></p>
+            <p><%= post.message %></p>
+            <td><%= link_to 'Show', post, class: 'btn btn-info btn-sm' %></td>
+        <td><%= link_to 'New Comment', new_comment_path(:post_id => post.id), class: 'btn btn-info btn-sm' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post, :cabin_id => @cabin.id), class: 'btn btn-warning btn-sm' %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
 
-<h3>Posts</h3>
+     </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+<!-- HER KOMMER TKS KODE 
 
 <table>
 
@@ -54,6 +97,25 @@
 <%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
 
 <br>
+-->
 
-<%= link_to 'Edit', edit_cabin_path(@cabin) %> |
-<%= link_to 'Back', cabins_path %>
+
+<!--New Cabin Button-->
+<div class="row container">
+    <div class="col-md-11">
+      <br></br>
+    </div>
+    <div class="col-md-1"></div>
+          <%= link_to 'Back', cabins_path, class: 'btn btn-info' %>
+      -->
+  </div>
+
+
+
+     <!-- <button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_cabin_path(@cabin) %>Edit</button>-->
+
+</div>
+
+
+
+
