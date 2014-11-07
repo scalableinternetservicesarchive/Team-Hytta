@@ -22,7 +22,7 @@
 
           <% if user_signed_in? %>
             <%= link_to 'Log Out', destroy_user_session_path,
-                  method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm navbar-right' %>
+                  method: :delete, class: 'btn btn-danger btn-sm navbar-right' %>
           <% else %>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
               <%= f.email_field :email, autofocus: true, placeholder: "Email" %>
