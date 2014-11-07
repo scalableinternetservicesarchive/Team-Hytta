@@ -37,19 +37,26 @@
   </div>
 <!--Cottage Panell-->
   <div class="col-md-10">
+    <% @cabins.each do |cabin| %>
     <div class="panel panel-default">
+
       <div class="panel-body">
 
         <div class="col-md-3">
         <img src="http://betweennapsontheporch.net/wp-content/uploads/2014/09/Beach-Cottage-in-Florida-200x200.jpg" alt="Responsive image img-rounded">
         </div>
         <div class="col-md-7">
-        <h4>The Summer Cottage</h4>
-          <p>Her kommer det masse kul tekst</p>
+        <h4><%= link_to cabin.navn, cabin %></h4>
+        <p><%= cabin.address %></p>
+          <p><%= cabin.descritpion %></p>
+              <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
+          <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
         </div>
      </div>
 
     </div>
+    
+           <% end %>
   </div>
 </div>
 
@@ -61,16 +68,7 @@
     <div class="col-md-1">
       <table>
         <tbody>
-          <% @cabins.each do |cabin| %>
-            <tr>
-              <td><%= cabin.navn %></td>
-              <td><%= cabin.address %></td>
-              <td><%= cabin.descritpion %></td>
-              <td><%= link_to 'Show', cabin, class: 'btn btn-info btn-sm' %></td>
-              <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
-              <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
-            </tr>
-           <% end %>
+          
          </tbody>
         </table>
       </div>
