@@ -12,17 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <br>
+    <%= f.text_field :title, placeholder: "Title", style: "width:400px"  %>
   </div>
   <div class="field">
-    <%= f.label :message %><br>
-    <%= f.text_area :message %>
+    <br>
+    <%= f.text_area :message, placeholder: "Message", style: "width:400px"  %>
   </div>
   <div >
     <%= f.hidden_field :cabin_id, :value => params[:cabin_id] %>
   </div>
+  <br>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Post", class: "btn btn-primary btn-sm" %> or
+    <%= link_to 'Back', :back, class: "btn btn-primary btn-sm" %>
   </div>
 <% end %>
