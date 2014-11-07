@@ -44,14 +44,14 @@
     <% @cabin.posts.each do |post| %>
     <div class="panel panel-default">
       <div class="panel-body">
-            <p><h4><%= post.title %></h4></p>
+            <p><h4><%= post.title %></h4> by <%= post.user.email if post.user %></p>
             <p><%= post.message %></p>
             <tbody>
    <tr>
       <p><h4>Comment</h4></p>
       <th colspan="3"></th>
     <% post.comments.each do |comment| %>
-        <p><%= comment.message %></p>
+        <p>(<%=comment.user.email if comment.user %>):  <%= comment.message %></p>
       </tr>
        <% end %>
       </tbody>
