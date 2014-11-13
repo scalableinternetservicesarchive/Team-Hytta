@@ -19,6 +19,10 @@ class CabinsController < ApplicationController
   def edit
   end
 
+  def todolist
+    @cabin = Cabin.find(params[:id])
+  end
+
   def create
     @cabin = Cabin.new(cabin_params)
     @cabin.user = current_user

@@ -7,9 +7,10 @@ Rails.application.routes.draw do
 
   resources :posts
 
-  resources :cabins
+  resources :cabins 
 
   devise_for :users
+
 
 
 
