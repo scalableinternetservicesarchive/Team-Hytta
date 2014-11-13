@@ -25,7 +25,11 @@
   </div>
   <div class="actions">
     <br>
-    <%= f.submit "Create Cabin", class: "btn btn-primary btn-sm" %> or 
+    <% if request.original_url.split("/").last == "edit" %>
+      <%= f.submit "Edit Cabin", class: "btn btn-primary btn-sm" %> 
+    <% else %>
+      <%= f.submit "Create Cabin", class: "btn btn-primary btn-sm" %> 
+    <% end %>
     <%= link_to 'Back', cabins_path, class: "btn btn-primary btn-sm" %>
   </div>
 <% end %>

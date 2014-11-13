@@ -24,7 +24,11 @@
   </div>
   <br>
   <div class="actions">
-    <%= f.submit "Create Post", class: "btn btn-primary btn-sm" %> or
+    <% if (request.original_url.split("/").last).split("?").first == "edit" %>
+      <%= f.submit "Edit Post", class: "btn btn-primary btn-sm" %>
+    <% else %> 
+      <%= f.submit "Create Post", class: "btn btn-primary btn-sm" %>
+    <% end %>
     <%= link_to 'Back', :back, class: "btn btn-primary btn-sm" %>
   </div>
 <% end %>

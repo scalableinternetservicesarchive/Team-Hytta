@@ -24,7 +24,12 @@
   </div>
   <br>
   <div class="actions">
-    <%= f.submit "Create Comment", class: "btn btn-primary btn-sm" %> or
+    <% print "heihei" %>
+    <% if (request.original_url.split("/").last).split("?").first == "edit" %>
+      <%= f.submit "Edit Comment", class: "btn btn-primary btn-sm" %> 
+    <% else %>
+      <%= f.submit "Create Comment", class: "btn btn-primary btn-sm" %> 
+    <% end %>
     <%= link_to 'Back', comments_path, class: "btn btn-primary btn-sm" %>
   </div>
 <% end %>
