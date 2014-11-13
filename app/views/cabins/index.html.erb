@@ -31,7 +31,7 @@
         <p>Olav Nordmann</p>
         <p><%= current_user.email %></p>
         <p>+47 909 99 775</p>
-        <p><button type="button" class="btn btn-primary">Settings</button></p>
+        <p><%= link_to 'Settings', users_edit_path, class: "btn btn-primary btn-sm" %></p>
       </div>
     </div>
   </div>

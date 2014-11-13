@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'users/edit'
+
   get 'photoalbum/index'
 
   get 'todolist/index'
