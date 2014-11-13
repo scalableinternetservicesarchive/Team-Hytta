@@ -24,12 +24,12 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.user = current_user
     @comment.save
-    respond_with(@comment)
+    respond_with(@comment.post.cabin)
   end
 
   def update
     @comment.update(comment_params)
-    respond_with(@comment)
+    respond_with(@comment.post.cabin)
   end
 
   def destroy

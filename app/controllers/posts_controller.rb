@@ -13,23 +13,23 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    respond_with @post
+    respond_with @post.cabin
   end
 
   def edit
-    respond_with @cabin
+    respond_with @post.cabin
   end
 
   def create
     @post = Post.new(post_params)
     @post.user = current_user
     @post.save
-    respond_with @post
+    respond_with @post.cabin
   end
 
   def update
     @post.update(post_params)
-    respond_with @post
+    respond_with @post.cabin
   end
 
   def destroy
