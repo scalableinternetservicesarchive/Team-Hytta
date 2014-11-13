@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  get 'photoalbum/index'
+
+  get 'todolist/index'
+
   resources :comments
 
   root 'cabins#index'

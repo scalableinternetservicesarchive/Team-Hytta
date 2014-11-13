@@ -1,5 +1,4 @@
-class ToDoListController < ActionController::Base
-
-
-
-end 
+class TodolistController < ApplicationController
+  def index
+  end
+end
