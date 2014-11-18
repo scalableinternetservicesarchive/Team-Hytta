@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @photoalbum.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @photoalbum.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@photoalbum.picture_url, :width => 600) if @photoalbum.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_photoalbum_path(@photoalbum) %> |
+<%= link_to 'Back', photoalbums_path %>

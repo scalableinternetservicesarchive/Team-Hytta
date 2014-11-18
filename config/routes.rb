@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  
+
+  resources :photoalbums
 
   get 'users/edit'
 
