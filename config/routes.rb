@@ -2,13 +2,11 @@ Rails.application.routes.draw do
 
   
 
+  resources :todolists
+
   resources :photoalbums
 
   get 'users/edit'
-
-  get 'photoalbum/index'
-
-  get 'todolist/index'
 
   resources :comments
 

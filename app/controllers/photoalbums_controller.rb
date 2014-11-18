@@ -6,7 +6,6 @@ class PhotoalbumsController < ApplicationController
   end
 
   def show
-    respond_with(@photoalbum)
   end
 
   def new
@@ -24,12 +23,12 @@ class PhotoalbumsController < ApplicationController
 
   def update
     @photoalbum.update(photoalbum_params)
-    respond_with(@photoalbum)
+    redirect_to photoalbums_path
   end
 
   def destroy
     @photoalbum.destroy
-    respond_with(@photoalbum)
+    redirect_to photoalbums_path
   end
 
   private
