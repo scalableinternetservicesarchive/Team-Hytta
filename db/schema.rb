@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20141118072157) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "imageurl"
   end
 
   add_index "cabins", ["user_id"], name: "index_cabins_on_user_id"
