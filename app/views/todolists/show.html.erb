@@ -5,5 +5,15 @@
   <%= @todolist.name %>
 </p>
 
-<%= link_to 'Edit', edit_todolist_path(@todolist) %> |
-<%= link_to 'Back', todolists_path %>
+<!--Make spece between  -->
+<div class="row container">
+  <br></br>
+</div>
+
+
+
+<!-- buttons -->
+<div class="row container">
+	<%= link_to 'Edit', edit_todolist_path(@todolist) %> |
+	<%= link_to 'Back', todolists_path %>
+</div>
