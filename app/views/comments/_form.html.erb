@@ -18,10 +18,14 @@
   <div >
     <%= f.hidden_field :post_id, :value => params[:post_id] %>
   </div>
+  
+  <!--
   <div class="field">
     <br>
     <%= f.text_field :parent_id, placeholder: "Parent id", style: "width:400px"  %>
   </div>
+-->
+
   <br>
   <div class="actions">
     <% if (request.original_url.split("/").last).split("?").first == "edit" %>
