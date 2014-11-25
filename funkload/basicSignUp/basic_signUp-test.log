@@ -1,0 +1,8 @@
+2014-11-25 12:20:56,644 DEBUG test_basic_signUp: Starting -----------------------------------
+	XXX the test case description
+2014-11-25 12:20:56,644 DEBUG test_basic_signUp: setUp
+2014-11-25 12:20:56,644 DEBUG test_basic_signUp: GET: http://images.techtimes.com/data/images/full/4061/bill-gates-wealthiest-person.jpg?w=600
+	Page 1: Get /data/images/full/4...althiest-person.jpg ...
+2014-11-25 12:20:56,760 DEBUG test_basic_signUp:  Done in 0.115s
+2014-11-25 12:20:56,984 DEBUG test_basic_signUp: tearDown.
+
