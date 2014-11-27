@@ -34,8 +34,10 @@
         <h3 class="panel-title">Cabin Menu</h3>
       </div>
       <div class="panel-body">
+      <% if current_user == @cabin.user %>
         <p><%= link_to 'Edit', edit_cabin_path, class: 'btn btn-info' %></p>
-        <p><%= link_to 'Todo List', todolists_path, class: 'btn btn-info' %></p>
+          <p><%= link_to 'Todo List', todolists_path, class: 'btn btn-info' %></p>
+          <% end %>
         <p><%= link_to 'Photo Album', photoalbums_path, class: 'btn btn-info' %></p>
       </div>
     </div>
@@ -46,7 +48,7 @@
     <div class="panel panel-default">
       <div class="panel-body">
             <p><h4><%= post.title %></h4> by <%= post.user.email if post.user %></p>
-            <p><%= post.message %></p>
+            <p><%= post.message %></p>  
             <tbody>
    <tr>
       <p><h4>Comment</h4></p>
@@ -60,8 +62,10 @@
       </tbody>
       <br>
         <td><%= link_to 'New Comment', new_comment_path(:post_id => post.id), class: 'btn btn-info btn-sm' %></td>
+        <% if current_user == post.user or current_user == @cabin.user %>
         <td><%= link_to 'Edit', edit_post_path(post, :cabin_id => @cabin.id), class: 'btn btn-warning btn-sm' %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
+        <% end %>
 
      </div>
     </div>
@@ -76,7 +80,7 @@
     </div>
     <div class="col-md-1"></div>
           <td><%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></td>
-          <td><%= link_to 'Back', cabins_path, class: 'btn btn-info' %></td>
+          <td><%= link_to 'Back', :back, class: 'btn btn-info' %></td>
   </div>
 
 

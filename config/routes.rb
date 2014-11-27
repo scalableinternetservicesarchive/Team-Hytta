@@ -1,25 +1,29 @@
 Rails.application.routes.draw do
 
+
   
 
   resources :todolists
 
   resources :photoalbums
 
-  get 'users/edit'
+  #get 'users/edit'
+
+  resources :people
 
   resources :comments
-
-  root 'cabins#index'
 
   resources :posts
 
   resources :cabins 
 
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
+  resources :users
 
+  get 'users/:id' => 'users#show'
 
-
+  #root 'cabins#index'
+  root 'users#show'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

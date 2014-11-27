@@ -38,7 +38,7 @@ class CabinsController < ApplicationController
   def destroy
     @cabin.destroy
     flash[:notice] = 'Cabin was successfully destroyed. '
-    respond_with @cabin
+    respond_with cabins_path
   end
 
   private

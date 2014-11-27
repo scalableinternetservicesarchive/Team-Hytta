@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118072157) do
+ActiveRecord::Schema.define(version: 20141118214653) do
 
   create_table "cabins", force: true do |t|
     t.string   "navn"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 20141118072157) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.string   "imageurl"
   end
 
   add_index "cabins", ["user_id"], name: "index_cabins_on_user_id"
@@ -77,6 +76,8 @@ ActiveRecord::Schema.define(version: 20141118072157) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

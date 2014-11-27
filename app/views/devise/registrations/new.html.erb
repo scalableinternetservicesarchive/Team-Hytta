@@ -6,7 +6,17 @@
 
   <div class="field">
     <br />
-    <%= f.email_field :email, autofocus: true, placeholder: "Email", style: "width:400px" %>
+    <%= f.text_field :first_name, autofocus: true, placeholder: "First name", style: "width:400px" %>
+  </div>
+
+  <div class="field">
+    <br />
+    <%= f.text_field :last_name, autofocus: true, placeholder: "Last name", style: "width:400px" %>
+  </div>
+
+  <div class="field">
+    <br />
+    <%= f.email_field :email, placeholder: "Email", style: "width:400px" %>
   </div>
 
   <div class="field">

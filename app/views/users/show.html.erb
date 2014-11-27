@@ -1,6 +1,16 @@
 <center>
-  <div>  
-    <h1>All Cabins</h1>
+  <div class="row container">
+    <div class="col-md-2">
+      <center>
+        <img src="http://images.techtimes.com/data/images/full/4061/bill-gates-wealthiest-person.jpg?w=600" class="img-responsive img-rounded" alt="Responsive image">
+      </center>
+    </div>  
+    <div class="col-md-10">
+      <center>
+        <div class="row">
+          <h1>My Cottages</h1>
+        </center>
+    </div>
   </div>
 </center>
 
@@ -11,9 +21,26 @@
 
 
 <div class="row container">
-
+  <div class="col-md-2">
+<!--About Me Panel-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">About Me</h3>
+      </div>
+      <div class="panel-body">
+        <p><%= @user.first_name %></p>
+        <p><%= @user.email %></p>
+        <p>+47 909 99 775</p>
+        <% if current_user == @use %>
+        <p><%= link_to 'Settings', edit_user_registration_path, class: "btn btn-primary btn-sm" %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
 <!--Cottage Panell-->
+  <div class="col-md-10">
     <% @cabins.each do |cabin| %>
+    <% if cabin.user == @user %>
     <div class="panel panel-default">
 
       <div class="panel-body">
@@ -26,7 +53,7 @@
         <p><%= cabin.address %></p>
           <p><%= cabin.descritpion %></p>
           <p><%= link_to cabin.user.email, cabin.user %></p>
-          <% if cabin.user == current_user %>
+          <% if current_user == cabin.user %>
               <td><%= link_to 'Edit', edit_cabin_path(cabin), class: 'btn btn-warning btn-sm' %></td>
           <td><%= link_to 'Destroy', cabin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-sm' %></td>
           <% end %>
@@ -34,30 +61,17 @@
      </div>
 
     </div>
-    
-           <% end %>
+    <% end %>
+    <% end %>
   </div>
 </div>
 
 <!--New Cabin Button-->
 <div class="row container">
-    <div class="col-md-11">
-      <br></br>
-    </div>
-    <div class="col-md-1">
-      <table>
-        <tbody>
-          
-         </tbody>
-        </table>
-      </div>
     <br>
       <%= link_to 'New Cabin', new_cabin_path, class: 'btn btn-info' %>
-      -->
+      <%= link_to 'All Cabins', cabins_path, class: 'btn btn-info' %>
   </div>
-</div>
-</div>
-</center>
 
 
 

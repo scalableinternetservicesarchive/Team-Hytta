@@ -34,7 +34,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    respond_with @post
+    respond_with @post.cabin
   end
 
   private
