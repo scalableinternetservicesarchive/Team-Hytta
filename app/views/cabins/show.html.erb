@@ -5,7 +5,7 @@
   <div class="row container">
     <div class="col-md-2">
       <center>
-        <img src="http://betweennapsontheporch.net/wp-content/uploads/2014/09/Beach-Cottage-in-Florida-200x200.jpg" class="img-responsive img-rounded" alt="Responsive image">
+        <img src="http://betweennapsontheporch.net/wp-content/uploads/2014/09/Beach-Cottage-in-Florida-200x200.jpg" class="img-rounded" alt="Responsive image">
       </center>
     </div>  
     <div class="col-md-10">
@@ -75,17 +75,14 @@
 
 <!--New Cabin Button-->
 <div class="row container">
-    <div class="col-md-11">
-      <br></br>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-9">
+      <td><%= link_to 'Back', :back, class: 'btn btn-info' %></td>
     </div>
     <div class="col-md-1"></div>
-          <td><%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></td>
-          <td><%= link_to 'Back', :back, class: 'btn btn-info' %></td>
+      <td><%= link_to 'New Post', new_post_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></td>
   </div>
-
-
-
-     <!-- <button type="button" class="btn btn-primary"><%= link_to 'Edit', edit_cabin_path(@cabin) %>Edit</button>-->
 
 </div>
 

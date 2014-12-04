@@ -1,40 +1,43 @@
-<div class="row">
-  <center>
-    <h1> 
-      <strong>
-        <h1>Listing photoalbums</h1>
-      </strong>
-    </h1>
-  </center>
+<p id="notice"><%= notice %></p>
+
+
+<center>
+
+  <div>
+    <strong>
+      <h1>Photos</h1>
+    </strong>
+  <div> 
+
+<!--Make spece between Profile Picture and About me Panel -->
+<div class="row container">
+  <br></br>
 </div>
 
-
-
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div>
     <% @photoalbums.each do |photoalbum| %>
-      <tr>
-        <td><%= photoalbum.name %></td>
-        <td><%= photoalbum.description %></td>
-        <td><%= photoalbum.picture %></td>
-        <td><%= link_to 'Show', photoalbum %></td>
-        <td><%= link_to 'Edit', edit_photoalbum_path(photoalbum) %></td>
-        <td><%= link_to 'Destroy', photoalbum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="panel panel-default row">
+      <div class="panel-body">
+          <div class="col-md-9 text-left"> <%= photoalbum.name %>
+            <%= photoalbum.description %>
+            <%= photoalbum.picture %>
+
+
+
+          </div>
+          <div class="col-md-3">
+            <%= link_to 'Show', photoalbum, class: 'btn btn-info' %>
+            <%= link_to 'Edit', edit_photoalbum_path(photoalbum), class: 'btn btn-info' %>
+            <%= link_to 'Destroy', photoalbum, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
-<br>
 
-<%= link_to 'New Photoalbum', new_photoalbum_path %>
+<div class="row">
+    <%= link_to 'Upload Photo', new_photoalbum_path, class: 'btn btn-info' %>
+</div>
+
+</center>

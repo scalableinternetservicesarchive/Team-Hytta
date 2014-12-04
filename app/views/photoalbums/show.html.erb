@@ -1,19 +1,21 @@
+<center>
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @photoalbum.name %>
-</p>
+<div class="row container">
+    <div class="panel panel-default">
+      <div class="panel-body">
+  		<p><h2><%= @photoalbum.name %></h2></p>
+  		<p><%= @photoalbum.description %></p>
+  		 <br></br>
+  		<img class="img-responsive"<%= image_tag(@photoalbum.picture_url, class: 'img-rounded', :width => 800) if @photoalbum.picture.present? %>>
+  		  <br></br>
+      </div>
+    </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @photoalbum.description %>
-</p>
+<div class="row">
+	<%= link_to 'Back', photoalbums_path, class: 'btn btn-info' %>
+  <%= link_to 'Edit', edit_photoalbum_path(@photoalbum), class: 'btn btn-info' %>
+</div>
 
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@photoalbum.picture_url, :width => 600) if @photoalbum.picture.present? %>
-</p>
-
-<%= link_to 'Edit', edit_photoalbum_path(@photoalbum) %> |
-<%= link_to 'Back', photoalbums_path %>
+</center>
