@@ -21,6 +21,7 @@
           <div class="col-md-9 text-left"> <%= photoalbum.name %>
             <%= photoalbum.description %>
             <%= photoalbum.picture %>
+            <img class="img-responsive"<%= image_tag(photoalbum.picture_url, class: 'img-rounded', :width => 800) if photoalbum.picture.present? %>>
 
 
 
