@@ -18,10 +18,13 @@
     <% @photoalbums.each do |photoalbum| %>
     <div class="panel panel-default row">
       <div class="panel-body">
-          <div class="col-md-9 text-left"> <%= photoalbum.name %>
+          <div class="col-md-9 text-left">
+            <% if photoalbum.cabin_id == @cabin.id %>
+            <%= photoalbum.name %>
             <%= photoalbum.description %>
             <%= photoalbum.picture %>
             <img class="img-responsive"<%= image_tag(photoalbum.picture_url, class: 'img-rounded', :width => 800) if photoalbum.picture.present? %>>
+
 
 
 
@@ -32,13 +35,14 @@
             <%= link_to 'Destroy', photoalbum, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
         </div>
+        <% end %>
       </div>
     <% end %>
   </div>
 
 
 <div class="row">
-    <%= link_to 'Upload Photo', new_photoalbum_path, class: 'btn btn-info' %>
+    <%= link_to 'Upload Photo', new_photoalbum_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
 </div>
 
 </center>
