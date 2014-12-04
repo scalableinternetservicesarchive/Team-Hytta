@@ -36,7 +36,7 @@
       <div class="panel-body">
       <% if current_user == @cabin.user %>
         <p><%= link_to 'Edit', edit_cabin_path, class: 'btn btn-info' %></p>
-          <p><%= link_to 'Todo List', todolists_path, class: 'btn btn-info' %></p>
+          <p><%= link_to 'Todo List', todolists_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></p>
           <% end %>
         <p><%= link_to 'Photo Album', photoalbums_path(:cabin_id => @cabin.id), class: 'btn btn-info' %></p>
       </div>

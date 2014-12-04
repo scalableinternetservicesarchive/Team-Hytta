@@ -15,6 +15,9 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  <div >
+    <%= f.hidden_field :cabin_id, :value => params[:cabin_id] %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

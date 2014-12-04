@@ -16,13 +16,15 @@
 
   <div>
     <% @photoalbums.each do |photoalbum| %>
+    <% if photoalbum.cabin_id == @cabin.id %>
     <div class="panel panel-default row">
       <div class="panel-body">
           <div class="col-md-9 text-left">
-            <% if photoalbum.cabin_id == @cabin.id %>
             <%= photoalbum.name %>
             <%= photoalbum.description %>
             <%= photoalbum.picture %>
+              
+            <%= photoalbum.user.email %>
             <img class="img-responsive"<%= image_tag(photoalbum.picture_url, class: 'img-rounded', :width => 800) if photoalbum.picture.present? %>>
 
 

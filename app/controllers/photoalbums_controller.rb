@@ -18,6 +18,7 @@ class PhotoalbumsController < ApplicationController
 
   def create
     @photoalbum = Photoalbum.new(photoalbum_params)
+    @photoalbum.user = current_user
     @photoalbum.save
     redirect_to photoalbums_path
   end

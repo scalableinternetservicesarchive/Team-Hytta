@@ -7,6 +7,7 @@
 
   <div>
       <% @todolists.each do |todolist| %>
+      <% if todolist.cabin_id == @cabin.id %>
     <div class="panel panel-default row">
       <div class="panel-body">
           <div class="col-md-10 text-left">
@@ -17,12 +18,13 @@
           <%= link_to 'Destroy', todolist, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
         </div>
         </div>
+        <% end %>
       </div>
     <% end %>
   </div>
 
 <div class="row">
-    <%= link_to 'New', new_todolist_path, class: 'btn btn-info' %>
+    <%= link_to 'New', new_todolist_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
 </div>
 
 </center>

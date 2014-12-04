@@ -3,6 +3,7 @@ class TodolistsController < ApplicationController
 
   def index
     @todolists = Todolist.all
+    @cabin = Cabin.find(params[:cabin_id])
   end
 
   def show
@@ -17,6 +18,7 @@ class TodolistsController < ApplicationController
 
   def create
     @todolist = Todolist.new(todolist_params)
+    @todolist.user = current_user
     @todolist.save
     redirect_to todolists_path
   end
@@ -37,6 +39,6 @@ class TodolistsController < ApplicationController
     end
 
     def todolist_params
-      params.require(:todolist).permit(:name)
+      params.require(:todolist).permit(:name, :cabin_id)
     end
 end
