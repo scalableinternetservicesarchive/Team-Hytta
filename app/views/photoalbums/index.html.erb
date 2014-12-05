@@ -1,50 +1,51 @@
 <p id="notice"><%= notice %></p>
-
-
 <center>
 
-  <div>
-    <strong>
-      <h1>Photos</h1>
-    </strong>
-  <div> 
+<div>
+  <strong>
+    <h1>Photos</h1>
+  </strong>
+<div> 
 
-<!--Make spece between Profile Picture and About me Panel -->
+<!--Make spece -->
 <div class="row container">
   <br></br>
 </div>
 
-  <div>
-    <% @photoalbums.each do |photoalbum| %>
-    <% if photoalbum.cabin_id == @cabin.id %>
-    <div class="panel panel-default row">
-      <div class="panel-body">
-          <div class="col-md-9 text-left">
-            <%= photoalbum.name %>
-            <%= photoalbum.description %>
-            <%= photoalbum.picture %>
-              
-            <%= photoalbum.user.email %>
-            <img class="img-responsive"<%= image_tag(photoalbum.picture_url, class: 'img-rounded', :width => 800) if photoalbum.picture.present? %>>
-
-
-
-
+<div class="container">
+  <div class="row">
+      <% @photoalbums.each do |photoalbum| %>
+        <% if photoalbum.cabin_id == @cabin.id %>
+            <div class="col-md-4">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                    <%= image_tag(photoalbum.picture_url, class: 'img-rounded img-responsive', :width => 300) if photoalbum.picture.present? %>
+                        <p></p>
+                         <!--<%= photoalbum.name %>
+                         <%= photoalbum.description %>
+                         <%= photoalbum.picture %>
+                         <%= photoalbum.user.email %>-->
+                  </div>
+            <div class="row">
+              <%= link_to 'Show', photoalbum, class: 'btn btn-info' %>
+              <%= link_to 'Edit', edit_photoalbum_path(photoalbum), class: 'btn btn-info' %>
+              <%= link_to 'Destroy', photoalbum, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
           </div>
-          <div class="col-md-3">
-            <%= link_to 'Show', photoalbum, class: 'btn btn-info' %>
-            <%= link_to 'Edit', edit_photoalbum_path(photoalbum), class: 'btn btn-info' %>
-            <%= link_to 'Destroy', photoalbum, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
-        </div>
-        </div>
         <% end %>
+        </div>
       </div>
-    <% end %>
+    <% end %>  
   </div>
-
-
-<div class="row">
-    <%= link_to 'Upload Photo', new_photoalbum_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
 </div>
 
+</center>
+
+<center>
+  <div class="row conatianer">
+          <div class="col-md-12">
+      <%= link_to 'Upload Photo', new_photoalbum_path(:cabin_id => @cabin.id), class: 'btn btn-info' %>
+  </div>
+  </div>
 </center>
