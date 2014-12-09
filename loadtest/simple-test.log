@@ -1,0 +1,283 @@
+2014-12-09 13:25:50,666 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:25:50,666 DEBUG test_simple: setUp
+2014-12-09 13:25:50,667 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:25:50,674 DEBUG test_simple:  Done in 0.008s
+2014-12-09 13:25:50,675 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:25:50,735 DEBUG test_simple:  Done in 0.061s
+2014-12-09 13:25:50,736 DEBUG test_simple:  Load css and images...
+2014-12-09 13:26:03,687 DEBUG test_simple:   Done in 12.946s
+2014-12-09 13:26:03,687 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:26:03,816 DEBUG test_simple:  Done in 0.129s
+2014-12-09 13:26:03,816 DEBUG test_simple:  Load css and images...
+2014-12-09 13:26:03,818 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:26:03,818 DEBUG test_simple: tearDown.
+
+2014-12-09 13:33:12,449 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:33:12,449 DEBUG test_simple: setUp
+2014-12-09 13:33:12,449 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:33:12,456 DEBUG test_simple:  Done in 0.007s
+2014-12-09 13:33:12,456 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:33:12,564 DEBUG test_simple:  Done in 0.108s
+2014-12-09 13:33:12,564 DEBUG test_simple:  Load css and images...
+2014-12-09 13:33:31,364 DEBUG test_simple:   Done in 18.795s
+2014-12-09 13:33:31,364 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:33:31,428 DEBUG test_simple:  Done in 0.064s
+2014-12-09 13:33:31,428 DEBUG test_simple:  Load css and images...
+2014-12-09 13:33:31,430 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:33:31,432 DEBUG test_simple: tearDown.
+
+2014-12-09 13:34:08,132 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:34:08,132 DEBUG test_simple: setUp
+2014-12-09 13:34:08,132 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:34:08,141 DEBUG test_simple:  Done in 0.009s
+2014-12-09 13:34:08,141 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:34:08,247 DEBUG test_simple:  Done in 0.106s
+2014-12-09 13:34:08,247 DEBUG test_simple:  Load css and images...
+2014-12-09 13:34:18,567 DEBUG test_simple:   Done in 10.316s
+2014-12-09 13:34:18,567 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:34:18,635 DEBUG test_simple:  Done in 0.067s
+2014-12-09 13:34:18,635 DEBUG test_simple:  Load css and images...
+2014-12-09 13:34:18,637 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:34:18,637 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'sfmetk1u'), ('user[last_name]', 'sfmetk1u'), ('user[email]', 'oat8czoz@occidentalis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:34:18,672 DEBUG test_simple:  Failed in 0.035s
+2014-12-09 13:34:18,673 DEBUG test_simple: tearDown.
+
+2014-12-09 13:35:02,803 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:35:02,803 DEBUG test_simple: setUp
+2014-12-09 13:35:02,804 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:35:02,812 DEBUG test_simple:  Done in 0.008s
+2014-12-09 13:35:02,812 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:35:02,916 DEBUG test_simple:  Done in 0.104s
+2014-12-09 13:35:02,916 DEBUG test_simple:  Load css and images...
+2014-12-09 13:35:10,940 DEBUG test_simple:   Done in 8.020s
+2014-12-09 13:35:10,941 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:35:11,008 DEBUG test_simple:  Done in 0.068s
+2014-12-09 13:35:11,009 DEBUG test_simple:  Load css and images...
+2014-12-09 13:35:11,011 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:35:11,011 DEBUG test_simple: POST: http://localhost:3000 [('user[first_name]', '1vudy'), ('user[last_name]', '1vudy'), ('user[email]', '5kpd1wr@nothos.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:35:11,066 DEBUG test_simple:  Failed in 0.056s
+2014-12-09 13:35:11,067 DEBUG test_simple: tearDown.
+
+2014-12-09 13:35:23,066 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:35:23,066 DEBUG test_simple: setUp
+2014-12-09 13:35:23,066 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:35:23,075 DEBUG test_simple:  Done in 0.009s
+2014-12-09 13:35:23,075 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:35:23,183 DEBUG test_simple:  Done in 0.107s
+2014-12-09 13:35:23,183 DEBUG test_simple:  Load css and images...
+2014-12-09 13:35:38,010 DEBUG test_simple:   Done in 14.823s
+2014-12-09 13:35:38,010 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:35:38,087 DEBUG test_simple:  Done in 0.076s
+2014-12-09 13:35:38,087 DEBUG test_simple:  Load css and images...
+2014-12-09 13:35:38,088 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:35:38,089 DEBUG test_simple: POST: http://localhost:3000/user [('user[first_name]', 'gnz2ba1h'), ('user[last_name]', 'gnz2ba1h'), ('user[email]', 'jbpnh@dodeca.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:35:38,177 DEBUG test_simple:  Failed in 0.088s
+2014-12-09 13:35:38,178 DEBUG test_simple: tearDown.
+
+2014-12-09 13:36:07,191 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:36:07,191 DEBUG test_simple: setUp
+2014-12-09 13:36:07,191 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:36:08,276 DEBUG test_simple:  Done in 1.085s
+2014-12-09 13:36:08,276 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:36:08,346 DEBUG test_simple:  Done in 0.069s
+2014-12-09 13:36:08,346 DEBUG test_simple:  Load css and images...
+2014-12-09 13:36:12,043 DEBUG test_simple:   Done in 3.693s
+2014-12-09 13:36:12,043 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:36:12,107 DEBUG test_simple:  Done in 0.063s
+2014-12-09 13:36:12,107 DEBUG test_simple:  Load css and images...
+2014-12-09 13:36:12,109 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:36:12,109 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'ub21tc'), ('user[last_name]', 'ub21tc'), ('user[email]', 'ku245w@phyllo.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:36:12,183 DEBUG test_simple:  Failed in 0.074s
+2014-12-09 13:36:12,184 DEBUG test_simple: tearDown.
+
+2014-12-09 13:48:28,531 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:48:28,531 DEBUG test_simple: setUp
+2014-12-09 13:48:28,531 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:48:28,539 DEBUG test_simple:  Done in 0.008s
+2014-12-09 13:48:28,539 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:48:28,607 DEBUG test_simple:  Done in 0.068s
+2014-12-09 13:48:28,607 DEBUG test_simple:  Load css and images...
+2014-12-09 13:48:39,456 DEBUG test_simple:   Done in 10.844s
+2014-12-09 13:48:39,456 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:48:39,571 DEBUG test_simple:  Done in 0.115s
+2014-12-09 13:48:39,571 DEBUG test_simple:  Load css and images...
+2014-12-09 13:48:39,572 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:48:39,573 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'k5gp6rad'), ('user[last_name]', 'k5gp6rad'), ('user[email]', '3st9q36v@phyllo.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:48:39,601 DEBUG test_simple:  Failed in 0.029s
+2014-12-09 13:48:39,602 DEBUG test_simple: tearDown.
+
+2014-12-09 13:55:15,444 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:55:15,444 DEBUG test_simple: setUp
+2014-12-09 13:55:15,444 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:55:15,452 DEBUG test_simple:  Done in 0.008s
+2014-12-09 13:55:15,452 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:55:15,512 DEBUG test_simple:  Done in 0.059s
+2014-12-09 13:55:15,512 DEBUG test_simple:  Load css and images...
+2014-12-09 13:55:31,353 DEBUG test_simple:   Done in 15.837s
+2014-12-09 13:55:31,353 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:55:31,463 DEBUG test_simple:  Done in 0.110s
+2014-12-09 13:55:31,464 DEBUG test_simple:  Load css and images...
+2014-12-09 13:55:31,465 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:55:31,465 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'n4c9pxhj'), ('user[last_name]', 'n4c9pxhj'), ('user[email]', '6tjrd1@maximus.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:55:31,494 DEBUG test_simple:  Failed in 0.029s
+2014-12-09 13:55:31,495 DEBUG test_simple: tearDown.
+
+2014-12-09 13:57:32,712 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 13:57:32,713 DEBUG test_simple: setUp
+2014-12-09 13:57:32,713 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 13:57:32,723 DEBUG test_simple:  Done in 0.010s
+2014-12-09 13:57:32,723 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 13:57:32,786 DEBUG test_simple:  Done in 0.062s
+2014-12-09 13:57:32,786 DEBUG test_simple:  Load css and images...
+2014-12-09 13:57:39,887 DEBUG test_simple:   Done in 7.096s
+2014-12-09 13:57:39,887 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 13:57:40,000 DEBUG test_simple:  Done in 0.113s
+2014-12-09 13:57:40,000 DEBUG test_simple:  Load css and images...
+2014-12-09 13:57:40,002 DEBUG test_simple:   Done in 0.000s
+2014-12-09 13:57:40,002 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'j2yry'), ('user[last_name]', 'j2yry'), ('user[email]', '3hacb@dolicho.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 13:57:40,032 DEBUG test_simple:  Failed in 0.030s
+2014-12-09 13:57:40,033 DEBUG test_simple: tearDown.
+
+2014-12-09 14:15:25,574 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:15:25,575 DEBUG test_simple: setUp
+2014-12-09 14:15:25,575 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:15:25,582 DEBUG test_simple:  Done in 0.007s
+2014-12-09 14:15:25,582 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:15:25,642 DEBUG test_simple:  Done in 0.060s
+2014-12-09 14:15:25,642 DEBUG test_simple:  Load css and images...
+2014-12-09 14:15:41,195 DEBUG test_simple: tearDown.
+
+2014-12-09 14:16:33,792 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:16:33,792 DEBUG test_simple: setUp
+2014-12-09 14:16:33,792 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:16:33,800 DEBUG test_simple:  Done in 0.008s
+2014-12-09 14:16:33,800 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:16:33,909 DEBUG test_simple:  Done in 0.109s
+2014-12-09 14:16:33,909 DEBUG test_simple:  Load css and images...
+2014-12-09 14:16:34,436 DEBUG test_simple:   Done in 0.523s
+2014-12-09 14:16:34,436 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 14:16:34,504 DEBUG test_simple:  Done in 0.068s
+2014-12-09 14:16:34,504 DEBUG test_simple:  Load css and images...
+2014-12-09 14:16:34,506 DEBUG test_simple:   Done in 0.000s
+2014-12-09 14:16:34,506 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'dgbs9'), ('user[last_name]', 'dgbs9'), ('user[email]', 'wrwooczj@via.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 14:16:34,535 DEBUG test_simple:  Failed in 0.029s
+2014-12-09 14:16:34,536 DEBUG test_simple: tearDown.
+
+2014-12-09 14:18:11,080 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:18:11,080 DEBUG test_simple: setUp
+2014-12-09 14:18:11,080 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:18:11,092 DEBUG test_simple:  Done in 0.012s
+2014-12-09 14:18:11,092 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:18:11,158 DEBUG test_simple:  Done in 0.066s
+2014-12-09 14:18:11,159 DEBUG test_simple:  Load css and images...
+2014-12-09 14:18:11,522 DEBUG test_simple:   Done in 0.359s
+2014-12-09 14:18:11,522 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 14:18:11,637 DEBUG test_simple:  Done in 0.114s
+2014-12-09 14:18:11,637 DEBUG test_simple:  Load css and images...
+2014-12-09 14:18:11,638 DEBUG test_simple:   Done in 0.000s
+2014-12-09 14:18:11,639 DEBUG test_simple: tearDown.
+
+2014-12-09 14:19:14,423 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:19:14,423 DEBUG test_simple: setUp
+2014-12-09 14:19:14,423 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:19:14,434 DEBUG test_simple:  Done in 0.011s
+2014-12-09 14:19:14,434 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:19:14,496 DEBUG test_simple:  Done in 0.061s
+2014-12-09 14:19:14,496 DEBUG test_simple:  Load css and images...
+2014-12-09 14:19:15,609 DEBUG test_simple:   Done in 1.109s
+2014-12-09 14:19:15,609 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 14:19:15,726 DEBUG test_simple:  Done in 0.116s
+2014-12-09 14:19:15,726 DEBUG test_simple:  Load css and images...
+2014-12-09 14:19:15,728 DEBUG test_simple:   Done in 0.000s
+2014-12-09 14:19:15,728 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'qnsut'), ('user[last_name]', 'qnsut'), ('user[email]', 'dr9pc16q@cyanos.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 14:19:15,758 DEBUG test_simple:  Failed in 0.030s
+2014-12-09 14:19:15,759 DEBUG test_simple: tearDown.
+
+2014-12-09 14:24:25,764 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:24:25,764 DEBUG test_simple: setUp
+2014-12-09 14:24:25,764 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:24:25,772 DEBUG test_simple:  Done in 0.007s
+2014-12-09 14:24:25,772 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:24:25,879 DEBUG test_simple:  Done in 0.107s
+2014-12-09 14:24:25,880 DEBUG test_simple:  Load css and images...
+2014-12-09 14:24:51,251 DEBUG test_simple:   Done in 25.367s
+2014-12-09 14:24:51,252 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 14:24:51,311 DEBUG test_simple:  Done in 0.059s
+2014-12-09 14:24:51,311 DEBUG test_simple:  Load css and images...
+2014-12-09 14:24:51,313 DEBUG test_simple:   Done in 0.000s
+2014-12-09 14:24:51,313 DEBUG test_simple: tearDown.
+
+2014-12-09 14:25:04,060 DEBUG test_simple: Starting -----------------------------------
+	Access our Demo app
+2014-12-09 14:25:04,060 DEBUG test_simple: setUp
+2014-12-09 14:25:04,060 DEBUG test_simple: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 14:25:04,068 DEBUG test_simple:  Done in 0.008s
+2014-12-09 14:25:04,069 DEBUG test_simple:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 14:25:04,129 DEBUG test_simple:  Done in 0.060s
+2014-12-09 14:25:04,129 DEBUG test_simple:  Load css and images...
+2014-12-09 14:25:52,543 DEBUG test_simple:   Done in 48.410s
+2014-12-09 14:25:52,543 DEBUG test_simple: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 14:25:52,603 DEBUG test_simple:  Done in 0.060s
+2014-12-09 14:25:52,603 DEBUG test_simple:  Load css and images...
+2014-12-09 14:25:52,605 DEBUG test_simple:   Done in 0.000s
+2014-12-09 14:25:52,605 DEBUG test_simple: POST: http://localhost:3000/users [('user[first_name]', 'scumh'), ('user[last_name]', 'scumh'), ('user[email]', 'vunnxp@viridis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'TG5hHhukxjc40AiMrv6tMfPBM4eFjsXNFOFnWFT3vTE='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 14:25:52,700 DEBUG test_simple:  Done in 0.095s
+2014-12-09 14:25:52,700 DEBUG test_simple:  Load redirect link: http://localhost:3000/
+2014-12-09 14:25:52,765 DEBUG test_simple:  Done in 0.065s
+2014-12-09 14:25:52,765 DEBUG test_simple:  Load css and images...
+2014-12-09 14:25:58,269 DEBUG test_simple:   Done in 5.501s
+2014-12-09 14:25:58,269 DEBUG test_simple: tearDown.
+

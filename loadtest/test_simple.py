@@ -7,36 +7,38 @@ import unittest
 from funkload.FunkLoadTestCase import FunkLoadTestCase
 from webunit.utility import Upload
 from funkload.utils import Data
-#from funkload.utils import xmlrpc_get_credential
+from funkload.Lipsum import Lipsum
+from funkload.utils import extract_token
+
 
 class Simple(FunkLoadTestCase):
-    """XXX
-
+    """
     This test use a configuration file simple.conf.
     """
 
     def setUp(self):
         """Setting up test."""
         self.logd("setUp")
-        self.server_url = self.conf_get('main', 'url')
-        # XXX here you can setup the credential access like this
-        # credential_host = self.conf_get('credential', 'host')
-        # credential_port = self.conf_getInt('credential', 'port')
-        # self.login, self.password = xmlrpc_get_credential(credential_host,
-        #                                                   credential_port,
-        # XXX replace with a valid group
-        #                                                   'members')
+        self.server_url = self.conf_get('main', 'url') 
 
     def test_simple(self):
-        # The description should be set in the configuration file
         server_url = self.server_url
-        # begin of test ---------------------------------------------
+        self.get(server_url, description="View the root URL")
+        self.get(server_url + "/users/sign_up", description="View the sign in page")
 
-        # /tmp/tmpgDnqJf_funkload/watch0001.request
-        #self.get(server_url + "/data/images/full/4061/bill-gates-wealthiest-person.jpg?w=600",
-        #   description="Get /data/images/full/4...althiest-person.jpg")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+        name = Lipsum().getUniqWord()
 
-        # end of test -----------------------------------------------
+        self.post(server_url + "/users",
+            params=[["user[first_name]", name],
+            ["user[last_name]", name],
+            ["user[email]", email],
+            ["user[password]", "alphabet"],
+            ["user[password_confirmation]", "alphabet"],
+            ["authenticity_token", auth_token],
+            ["commit", "Sign up"]],
+            description = "Create New User")
 
     def tearDown(self):
         """Setting up test."""
