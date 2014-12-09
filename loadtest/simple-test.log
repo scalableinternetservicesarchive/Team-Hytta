@@ -941,3 +941,238 @@
 2014-12-09 15:12:57,710 DEBUG test_createCommentOnCabin:   Done in 0.000s
 2014-12-09 15:12:57,710 DEBUG test_createCommentOnCabin: tearDown.
 
+2014-12-09 15:37:17,980 INFO test_createToDoListOnCabin: [test_createToDoListOnCabin] description not found
+2014-12-09 15:37:17,980 DEBUG test_createToDoListOnCabin: Starting -----------------------------------
+	
+2014-12-09 15:37:17,981 DEBUG test_createToDoListOnCabin: setUp
+2014-12-09 15:37:17,981 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:37:17,989 DEBUG test_createToDoListOnCabin:  Done in 0.008s
+2014-12-09 15:37:17,989 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:37:18,097 DEBUG test_createToDoListOnCabin:  Done in 0.108s
+2014-12-09 15:37:18,098 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:37:38,776 DEBUG test_createToDoListOnCabin:   Done in 20.674s
+2014-12-09 15:37:38,776 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:37:38,845 DEBUG test_createToDoListOnCabin:  Done in 0.069s
+2014-12-09 15:37:38,845 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:37:38,849 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:37:38,849 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/users [('user[first_name]', 'szznmb'), ('user[last_name]', 'szznmb'), ('user[email]', 'v6xwn4@platy.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'EQ/+6T4Ful0+1I9fYwebG8QUTk1dE+KkJOJYm0y335E='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:37:38,956 DEBUG test_createToDoListOnCabin:  Done in 0.107s
+2014-12-09 15:37:38,957 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 15:37:39,096 DEBUG test_createToDoListOnCabin:  Done in 0.139s
+2014-12-09 15:37:39,096 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:37:50,252 DEBUG test_createToDoListOnCabin:   Done in 11.155s
+2014-12-09 15:37:50,252 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 15:37:50,314 DEBUG test_createToDoListOnCabin:  Done in 0.062s
+2014-12-09 15:37:50,315 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:37:50,316 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:37:50,316 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'sinensis'), ('cabin[address]', 'Saurus variabilis montanus albus albus gaster sinensis erythro bradus saurus thrix tinctorius campus platy echinus unus pteron saurus phyllo.'), ('cabin[descritpion]', 'Punctatus caulos saurus silvestris deca, ad lateralis ! zygos ad novaehollandiae brachy rostra oleum variabilis.'), ('authenticity_token', 'EQ/+6T4Ful0+1I9fYwebG8QUTk1dE+KkJOJYm0y335E='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 15:37:50,330 DEBUG test_createToDoListOnCabin:  Done in 0.014s
+2014-12-09 15:37:50,330 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/cabins/17
+2014-12-09 15:37:50,438 DEBUG test_createToDoListOnCabin:  Done in 0.107s
+2014-12-09 15:37:50,438 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:38:00,002 DEBUG test_createToDoListOnCabin:   Failed in ~ 9.56s
+2014-12-09 15:38:00,003 DEBUG test_createToDoListOnCabin: tearDown.
+
+2014-12-09 15:38:57,871 INFO test_createToDoListOnCabin: [test_createToDoListOnCabin] description not found
+2014-12-09 15:38:57,871 DEBUG test_createToDoListOnCabin: Starting -----------------------------------
+	
+2014-12-09 15:38:57,871 DEBUG test_createToDoListOnCabin: setUp
+2014-12-09 15:38:57,871 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:38:57,881 DEBUG test_createToDoListOnCabin:  Done in 0.010s
+2014-12-09 15:38:57,882 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:38:57,943 DEBUG test_createToDoListOnCabin:  Done in 0.061s
+2014-12-09 15:38:57,943 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:39:31,613 DEBUG test_createToDoListOnCabin:   Done in 33.665s
+2014-12-09 15:39:31,613 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:39:31,678 DEBUG test_createToDoListOnCabin:  Done in 0.065s
+2014-12-09 15:39:31,679 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:39:31,680 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:39:31,680 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/users [('user[first_name]', 'dormj3g9'), ('user[last_name]', 'dormj3g9'), ('user[email]', 'sfxy1gw@australis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'VLAWwAITpWrpXU5EBY0zIaZaMUKvuPHPkT/AJuNFRB8='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:39:31,780 DEBUG test_createToDoListOnCabin:  Done in 0.099s
+2014-12-09 15:39:31,780 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 15:39:31,910 DEBUG test_createToDoListOnCabin:  Done in 0.129s
+2014-12-09 15:39:31,910 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:39:49,631 DEBUG test_createToDoListOnCabin:   Done in 17.719s
+2014-12-09 15:39:49,631 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 15:39:49,699 DEBUG test_createToDoListOnCabin:  Done in 0.067s
+2014-12-09 15:39:49,699 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:39:49,700 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:39:49,700 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'aquam'), ('cabin[address]', 'Arvensis folius dodeca saurus major obscurus lipsem variabilis oeos sit, sit bradus zygos.'), ('cabin[descritpion]', 'Tris delorum variegatus vulgaris tres nothos silvestris rubra leucus hortensis, via pteron campus ? dodeca familiaris rhytis ad.'), ('authenticity_token', 'VLAWwAITpWrpXU5EBY0zIaZaMUKvuPHPkT/AJuNFRB8='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 15:39:49,714 DEBUG test_createToDoListOnCabin:  Done in 0.014s
+2014-12-09 15:39:49,715 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/cabins/18
+2014-12-09 15:39:49,824 DEBUG test_createToDoListOnCabin:  Done in 0.109s
+2014-12-09 15:39:49,824 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:40:02,712 DEBUG test_createToDoListOnCabin:   Done in 12.886s
+2014-12-09 15:40:02,712 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists?cabin_id=18
+	Page 6: View the todolist page ...
+2014-12-09 15:40:02,774 DEBUG test_createToDoListOnCabin:  Done in 0.062s
+2014-12-09 15:40:02,774 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:40:02,775 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:40:02,776 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists/new?cabin_id=18
+	Page 7: View upload new todolist page ...
+2014-12-09 15:40:02,887 DEBUG test_createToDoListOnCabin:  Done in 0.111s
+2014-12-09 15:40:02,887 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:40:02,888 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:40:02,888 DEBUG test_createToDoListOnCabin: tearDown.
+
+2014-12-09 15:40:31,423 INFO test_createToDoListOnCabin: [test_createToDoListOnCabin] description not found
+2014-12-09 15:40:31,423 DEBUG test_createToDoListOnCabin: Starting -----------------------------------
+	
+2014-12-09 15:40:31,423 DEBUG test_createToDoListOnCabin: setUp
+2014-12-09 15:40:31,423 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:40:31,432 DEBUG test_createToDoListOnCabin:  Done in 0.008s
+2014-12-09 15:40:31,433 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:40:31,498 DEBUG test_createToDoListOnCabin:  Done in 0.065s
+2014-12-09 15:40:31,499 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:36,464 DEBUG test_createToDoListOnCabin:   Done in 184.962s
+2014-12-09 15:43:36,464 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:43:36,651 DEBUG test_createToDoListOnCabin:  Done in 0.187s
+2014-12-09 15:43:36,652 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:36,654 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:43:36,654 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/users [('user[first_name]', 'sns8px'), ('user[last_name]', 'sns8px'), ('user[email]', 'oug83@viridis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'FFSJPlp7RXNLMsT6j00KImYNCzNLeCMH6IsGAXsWyGo='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:43:36,764 DEBUG test_createToDoListOnCabin:  Done in 0.109s
+2014-12-09 15:43:36,764 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 15:43:36,892 DEBUG test_createToDoListOnCabin:  Done in 0.128s
+2014-12-09 15:43:36,893 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:48,123 DEBUG test_createToDoListOnCabin:   Done in 11.229s
+2014-12-09 15:43:48,123 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 15:43:48,185 DEBUG test_createToDoListOnCabin:  Done in 0.062s
+2014-12-09 15:43:48,186 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:48,187 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:43:48,187 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'pachys'), ('cabin[address]', 'Hortensis leucus officinalis rostra rhiza ? zygos glycis, ennea arvensis palustris noveboracensis argentatus tinctorius so.'), ('cabin[descritpion]', 'Erythro fulvus ad delorum erythro pratensis dermis tris nothos rubra.'), ('authenticity_token', 'FFSJPlp7RXNLMsT6j00KImYNCzNLeCMH6IsGAXsWyGo='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 15:43:48,201 DEBUG test_createToDoListOnCabin:  Done in 0.014s
+2014-12-09 15:43:48,201 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/cabins/19
+2014-12-09 15:43:48,310 DEBUG test_createToDoListOnCabin:  Done in 0.109s
+2014-12-09 15:43:48,310 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:55,051 DEBUG test_createToDoListOnCabin:   Done in 6.738s
+2014-12-09 15:43:55,051 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists?cabin_id=19
+	Page 6: View the todolist page ...
+2014-12-09 15:43:55,112 DEBUG test_createToDoListOnCabin:  Done in 0.061s
+2014-12-09 15:43:55,112 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:55,113 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:43:55,113 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists/new?cabin_id=19
+	Page 7: View upload new todolist page ...
+2014-12-09 15:43:55,174 DEBUG test_createToDoListOnCabin:  Done in 0.060s
+2014-12-09 15:43:55,174 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:43:55,175 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:43:55,175 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/todolists [('todolist[name]', 'melanus'), ('todolist[cabin_id]', '19'), ('authenticity_token', 'FFSJPlp7RXNLMsT6j00KImYNCzNLeCMH6IsGAXsWyGo='), ('commit', 'Create Todolist')]
+	Page 8: Create new Todolist ...
+2014-12-09 15:43:55,237 DEBUG test_createToDoListOnCabin:  Done in 0.061s
+2014-12-09 15:43:55,237 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/todolists
+2014-12-09 15:43:55,264 DEBUG test_createToDoListOnCabin:  Failed in 0.027s
+2014-12-09 15:43:55,264 DEBUG test_createToDoListOnCabin: tearDown.
+
+2014-12-09 15:44:30,505 INFO test_createToDoListOnCabin: [test_createToDoListOnCabin] description not found
+2014-12-09 15:44:30,505 DEBUG test_createToDoListOnCabin: Starting -----------------------------------
+	
+2014-12-09 15:44:30,505 DEBUG test_createToDoListOnCabin: setUp
+2014-12-09 15:44:30,506 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:44:30,516 DEBUG test_createToDoListOnCabin:  Done in 0.010s
+2014-12-09 15:44:30,516 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:44:30,575 DEBUG test_createToDoListOnCabin:  Done in 0.059s
+2014-12-09 15:44:30,575 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:42,081 DEBUG test_createToDoListOnCabin:   Done in 11.502s
+2014-12-09 15:44:42,081 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:44:42,196 DEBUG test_createToDoListOnCabin:  Done in 0.115s
+2014-12-09 15:44:42,196 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:42,198 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:44:42,198 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/users [('user[first_name]', 'zphs6'), ('user[last_name]', 'zphs6'), ('user[email]', 's73cyd73@cephalus.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'eRZyYukTx4tWg6uqeQ1Rz/SXm2EU/65vvyfA0zu8i2A='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:44:42,294 DEBUG test_createToDoListOnCabin:  Done in 0.096s
+2014-12-09 15:44:42,294 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 15:44:42,368 DEBUG test_createToDoListOnCabin:  Done in 0.074s
+2014-12-09 15:44:42,368 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:50,599 DEBUG test_createToDoListOnCabin:   Done in 8.229s
+2014-12-09 15:44:50,600 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 15:44:50,671 DEBUG test_createToDoListOnCabin:  Done in 0.070s
+2014-12-09 15:44:50,671 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:50,672 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:44:50,672 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'hortensis'), ('cabin[address]', 'Arvensis pteron, platy fulvus vitis, minimus silvestris cyanos cola caulos.'), ('cabin[descritpion]', 'Novaeseelandiae fuscus indicus deca oeos ; silvestris tris tetra, cyanos tetra occidentalis melanus rostra campus obscurus lineatus cristatus petra.'), ('authenticity_token', 'eRZyYukTx4tWg6uqeQ1Rz/SXm2EU/65vvyfA0zu8i2A='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 15:44:50,687 DEBUG test_createToDoListOnCabin:  Done in 0.015s
+2014-12-09 15:44:50,687 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/cabins/20
+2014-12-09 15:44:50,802 DEBUG test_createToDoListOnCabin:  Done in 0.115s
+2014-12-09 15:44:50,802 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:52,450 DEBUG test_createToDoListOnCabin:   Done in 1.645s
+2014-12-09 15:44:52,451 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists?cabin_id=20
+	Page 6: View the todolist page ...
+2014-12-09 15:44:52,570 DEBUG test_createToDoListOnCabin:  Done in 0.119s
+2014-12-09 15:44:52,570 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:52,571 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:44:52,571 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists/new?cabin_id=20
+	Page 7: View upload new todolist page ...
+2014-12-09 15:44:52,673 DEBUG test_createToDoListOnCabin:  Done in 0.101s
+2014-12-09 15:44:52,673 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:44:52,674 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:44:52,675 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/todolists [('todolist[name]', 'orientalis'), ('todolist[cabin_id]', '20'), ('authenticity_token', 'eRZyYukTx4tWg6uqeQ1Rz/SXm2EU/65vvyfA0zu8i2A='), ('commit', 'Create Todolist')]
+	Page 8: Create new Todolist ...
+2014-12-09 15:44:52,689 DEBUG test_createToDoListOnCabin:  Done in 0.014s
+2014-12-09 15:44:52,689 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/todolists
+2014-12-09 15:44:52,718 DEBUG test_createToDoListOnCabin:  Failed in 0.028s
+2014-12-09 15:44:52,719 DEBUG test_createToDoListOnCabin: tearDown.
+
+2014-12-09 15:45:25,767 INFO test_createToDoListOnCabin: [test_createToDoListOnCabin] description not found
+2014-12-09 15:45:25,767 DEBUG test_createToDoListOnCabin: Starting -----------------------------------
+	
+2014-12-09 15:45:25,767 DEBUG test_createToDoListOnCabin: setUp
+2014-12-09 15:45:25,767 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:45:25,779 DEBUG test_createToDoListOnCabin:  Done in 0.012s
+2014-12-09 15:45:25,779 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:45:25,887 DEBUG test_createToDoListOnCabin:  Done in 0.108s
+2014-12-09 15:45:25,888 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:34,449 DEBUG test_createToDoListOnCabin:   Done in 8.557s
+2014-12-09 15:45:34,449 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:45:34,515 DEBUG test_createToDoListOnCabin:  Done in 0.066s
+2014-12-09 15:45:34,515 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:34,517 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:45:34,517 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/users [('user[first_name]', '1fb23'), ('user[last_name]', '1fb23'), ('user[email]', '4r7et@major.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'Yx66w5ofGzQ9USLnOHd4kpfctHve81uGBq18O4yJgPo='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:45:34,609 DEBUG test_createToDoListOnCabin:  Done in 0.091s
+2014-12-09 15:45:34,609 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 15:45:34,727 DEBUG test_createToDoListOnCabin:  Done in 0.118s
+2014-12-09 15:45:34,727 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:39,018 DEBUG test_createToDoListOnCabin:   Done in 4.288s
+2014-12-09 15:45:39,018 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 15:45:39,084 DEBUG test_createToDoListOnCabin:  Done in 0.066s
+2014-12-09 15:45:39,084 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:39,086 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:45:39,086 DEBUG test_createToDoListOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'lipsem'), ('cabin[address]', 'Niger rhiza oleum platy variegatus, tinctorius punctatus palustris protos.'), ('cabin[descritpion]', 'Nona dermis, leucus variabilis silvestris hexa.'), ('authenticity_token', 'Yx66w5ofGzQ9USLnOHd4kpfctHve81uGBq18O4yJgPo='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 15:45:39,100 DEBUG test_createToDoListOnCabin:  Done in 0.014s
+2014-12-09 15:45:39,100 DEBUG test_createToDoListOnCabin:  Load redirect link: http://localhost:3000/cabins/21
+2014-12-09 15:45:39,215 DEBUG test_createToDoListOnCabin:  Done in 0.114s
+2014-12-09 15:45:39,215 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:41,353 DEBUG test_createToDoListOnCabin:   Done in 2.136s
+2014-12-09 15:45:41,353 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists?cabin_id=21
+	Page 6: View the todolist page ...
+2014-12-09 15:45:41,419 DEBUG test_createToDoListOnCabin:  Done in 0.066s
+2014-12-09 15:45:41,419 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:41,420 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:45:41,420 DEBUG test_createToDoListOnCabin: GET: http://localhost:3000/todolists/new?cabin_id=21
+	Page 7: View upload new todolist page ...
+2014-12-09 15:45:41,527 DEBUG test_createToDoListOnCabin:  Done in 0.106s
+2014-12-09 15:45:41,527 DEBUG test_createToDoListOnCabin:  Load css and images...
+2014-12-09 15:45:41,528 DEBUG test_createToDoListOnCabin:   Done in 0.000s
+2014-12-09 15:45:41,528 DEBUG test_createToDoListOnCabin: tearDown.
+
