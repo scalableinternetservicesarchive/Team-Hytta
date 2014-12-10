@@ -1176,3 +1176,119 @@
 2014-12-09 15:45:41,528 DEBUG test_createToDoListOnCabin:   Done in 0.000s
 2014-12-09 15:45:41,528 DEBUG test_createToDoListOnCabin: tearDown.
 
+2014-12-09 15:47:46,315 INFO test_creatUser: [test_creatUser] description not found
+2014-12-09 15:47:46,315 DEBUG test_creatUser: Starting -----------------------------------
+	
+2014-12-09 15:47:46,315 DEBUG test_creatUser: setUp
+2014-12-09 15:47:46,315 DEBUG test_creatUser: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 15:47:46,328 DEBUG test_creatUser:  Done in 0.013s
+2014-12-09 15:47:46,328 DEBUG test_creatUser:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 15:47:46,390 DEBUG test_creatUser:  Done in 0.062s
+2014-12-09 15:47:46,390 DEBUG test_creatUser:  Load css and images...
+2014-12-09 15:47:59,761 DEBUG test_creatUser:   Done in 13.367s
+2014-12-09 15:47:59,762 DEBUG test_creatUser: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 15:47:59,826 DEBUG test_creatUser:  Done in 0.065s
+2014-12-09 15:47:59,826 DEBUG test_creatUser:  Load css and images...
+2014-12-09 15:47:59,828 DEBUG test_creatUser:   Done in 0.000s
+2014-12-09 15:47:59,828 DEBUG test_creatUser: POST: http://localhost:3000/users [('user[first_name]', '1p953jz'), ('user[last_name]', '1p953jz'), ('user[email]', 'cxcydnr@rubra.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'r0R7b48JuB3Ppna7hprSIiF7VKtTnDRZCm1Ek/yWmmY='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 15:47:59,925 DEBUG test_creatUser:  Done in 0.097s
+2014-12-09 15:47:59,925 DEBUG test_creatUser:  Load redirect link: http://localhost:3000/
+2014-12-09 15:48:00,053 DEBUG test_creatUser:  Done in 0.128s
+2014-12-09 15:48:00,053 DEBUG test_creatUser:  Load css and images...
+2014-12-09 15:48:19,132 DEBUG test_creatUser:   Done in 19.077s
+2014-12-09 15:48:19,132 DEBUG test_creatUser: tearDown.
+
+2014-12-09 16:00:15,159 INFO test_createCabin: [test_createCabin] description not found
+2014-12-09 16:00:15,159 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-09 16:00:15,159 DEBUG test_createCabin: setUp
+2014-12-09 16:00:15,159 DEBUG test_createCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 16:00:15,173 DEBUG test_createCabin:  Done in 0.014s
+2014-12-09 16:00:15,173 DEBUG test_createCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 16:00:15,234 DEBUG test_createCabin:  Done in 0.061s
+2014-12-09 16:00:15,234 DEBUG test_createCabin:  Load css and images...
+2014-12-09 16:00:37,253 DEBUG test_createCabin:   Done in 22.015s
+2014-12-09 16:00:37,253 DEBUG test_createCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 16:00:37,377 DEBUG test_createCabin:  Done in 0.123s
+2014-12-09 16:00:37,377 DEBUG test_createCabin:  Load css and images...
+2014-12-09 16:00:37,379 DEBUG test_createCabin:   Done in 0.000s
+2014-12-09 16:00:37,379 DEBUG test_createCabin: POST: http://localhost:3000/users [('user[first_name]', '167qt'), ('user[last_name]', '167qt'), ('user[email]', 'ghmnc6oj@mauro.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'ArmJaCkzfR3gFkr+8TLDe/Vj7hlg8opy4Y0NKouZ8wc='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 16:00:37,474 DEBUG test_createCabin:  Done in 0.094s
+2014-12-09 16:00:37,474 DEBUG test_createCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 16:00:37,548 DEBUG test_createCabin:  Done in 0.074s
+2014-12-09 16:00:37,548 DEBUG test_createCabin:  Load css and images...
+2014-12-09 16:00:49,592 DEBUG test_createCabin:   Done in 12.042s
+2014-12-09 16:00:49,592 DEBUG test_createCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 16:00:49,736 DEBUG test_createCabin:  Done in 0.144s
+2014-12-09 16:00:49,736 DEBUG test_createCabin:  Load css and images...
+2014-12-09 16:00:49,738 DEBUG test_createCabin:   Done in 0.000s
+2014-12-09 16:00:49,738 DEBUG test_createCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'albus'), ('cabin[address]', 'Arctos australis arvensis, mauro cauda cristatus variegatus.'), ('cabin[descritpion]', 'Pteron parvus so albus unus cephalus pteron parvus rhiza minor rostra brachy officinalis vulgaris protos.'), ('authenticity_token', 'ArmJaCkzfR3gFkr+8TLDe/Vj7hlg8opy4Y0NKouZ8wc='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 16:00:49,757 DEBUG test_createCabin:  Done in 0.018s
+2014-12-09 16:00:49,757 DEBUG test_createCabin:  Load redirect link: http://localhost:3000/cabins/22
+2014-12-09 16:00:49,839 DEBUG test_createCabin:  Done in 0.082s
+2014-12-09 16:00:49,839 DEBUG test_createCabin:  Load css and images...
+2014-12-09 16:00:54,357 DEBUG test_createCabin:   Done in 4.516s
+2014-12-09 16:00:54,357 DEBUG test_createCabin: tearDown.
+
+2014-12-09 16:09:48,733 INFO test_createPostOnCabin: [test_createPostOnCabin] description not found
+2014-12-09 16:09:48,733 DEBUG test_createPostOnCabin: Starting -----------------------------------
+	
+2014-12-09 16:09:48,733 DEBUG test_createPostOnCabin: setUp
+2014-12-09 16:09:48,733 DEBUG test_createPostOnCabin: GET: http://localhost:3000
+	Page 1: View the root URL ...
+2014-12-09 16:09:48,745 DEBUG test_createPostOnCabin:  Done in 0.012s
+2014-12-09 16:09:48,746 DEBUG test_createPostOnCabin:  Load redirect link: http://localhost:3000/users/sign_up
+2014-12-09 16:09:48,809 DEBUG test_createPostOnCabin:  Done in 0.063s
+2014-12-09 16:09:48,809 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:09,167 DEBUG test_createPostOnCabin:   Done in 20.354s
+2014-12-09 16:10:09,168 DEBUG test_createPostOnCabin: GET: http://localhost:3000/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-09 16:10:09,276 DEBUG test_createPostOnCabin:  Done in 0.108s
+2014-12-09 16:10:09,276 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:09,278 DEBUG test_createPostOnCabin:   Done in 0.000s
+2014-12-09 16:10:09,278 DEBUG test_createPostOnCabin: POST: http://localhost:3000/users [('user[first_name]', 'hnum5'), ('user[last_name]', 'hnum5'), ('user[email]', 'nt7h2j@vitis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'b3EophYBqdUshol3EU9F7CZk2qSsj+UBpeguoV+inDY='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-09 16:10:09,368 DEBUG test_createPostOnCabin:  Done in 0.090s
+2014-12-09 16:10:09,369 DEBUG test_createPostOnCabin:  Load redirect link: http://localhost:3000/
+2014-12-09 16:10:09,449 DEBUG test_createPostOnCabin:  Done in 0.080s
+2014-12-09 16:10:09,449 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:20,746 DEBUG test_createPostOnCabin:   Done in 11.294s
+2014-12-09 16:10:20,746 DEBUG test_createPostOnCabin: GET: http://localhost:3000/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-09 16:10:20,861 DEBUG test_createPostOnCabin:  Done in 0.115s
+2014-12-09 16:10:20,861 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:20,863 DEBUG test_createPostOnCabin:   Done in 0.000s
+2014-12-09 16:10:20,863 DEBUG test_createPostOnCabin: POST: http://localhost:3000/cabins [('cabin[navn]', 'argentatus'), ('cabin[address]', 'Erythro lutea punctatus morphos biscortborealis biscortborealis ; tinctorius arctos, nothos tres phyllo hortensis.'), ('cabin[descritpion]', 'Albus aquam dodeca erythro albus sativus australis unus glycis dodeca diplo rhytis leucus, aquam notos sinensis.'), ('authenticity_token', 'b3EophYBqdUshol3EU9F7CZk2qSsj+UBpeguoV+inDY='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-09 16:10:20,878 DEBUG test_createPostOnCabin:  Done in 0.015s
+2014-12-09 16:10:20,878 DEBUG test_createPostOnCabin:  Load redirect link: http://localhost:3000/cabins/38
+2014-12-09 16:10:20,939 DEBUG test_createPostOnCabin:  Done in 0.062s
+2014-12-09 16:10:20,940 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:23,748 DEBUG test_createPostOnCabin:   Done in 2.806s
+2014-12-09 16:10:23,748 DEBUG test_createPostOnCabin: GET: http://localhost:3000/cabins/38
+	Page 6: View cabin page ...
+2014-12-09 16:10:23,860 DEBUG test_createPostOnCabin:  Done in 0.111s
+2014-12-09 16:10:23,860 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:23,861 DEBUG test_createPostOnCabin:   Done in 0.000s
+2014-12-09 16:10:23,861 DEBUG test_createPostOnCabin: GET: http://localhost:3000/posts/new?cabin_id=38
+	Page 7: View the new post page pr cabin ...
+2014-12-09 16:10:23,925 DEBUG test_createPostOnCabin:  Done in 0.064s
+2014-12-09 16:10:23,925 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:23,927 DEBUG test_createPostOnCabin:   Done in 0.000s
+2014-12-09 16:10:23,927 DEBUG test_createPostOnCabin: POST: http://localhost:3000/posts [('post[titile]', 'vitis'), ('post[message]', 'Nona tris tres rufus diplo chloreus cristatus octa vitis, gaster pachys zygos.'), ('post[cabin_id]', '38'), ('authenticity_token', 'b3EophYBqdUshol3EU9F7CZk2qSsj+UBpeguoV+inDY='), ('commit', 'Create Post')]
+	Page 8: Create comment on cabin ...
+2014-12-09 16:10:23,941 DEBUG test_createPostOnCabin:  Done in 0.015s
+2014-12-09 16:10:23,942 DEBUG test_createPostOnCabin:  Load redirect link: http://localhost:3000/cabins/38
+2014-12-09 16:10:24,055 DEBUG test_createPostOnCabin:  Done in 0.113s
+2014-12-09 16:10:24,055 DEBUG test_createPostOnCabin:  Load css and images...
+2014-12-09 16:10:24,057 DEBUG test_createPostOnCabin:   Done in 0.000s
+2014-12-09 16:10:24,057 DEBUG test_createPostOnCabin: tearDown.
+
