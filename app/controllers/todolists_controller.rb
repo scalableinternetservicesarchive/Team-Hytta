@@ -1,9 +1,10 @@
 class TodolistsController < ApplicationController
   before_action :set_todolist, only: [:show, :edit, :update, :destroy]
+  before_action :set_cabin, only: [:index]
+  respond_to :html, :json
 
   def index
     @todolists = Todolist.all
-    @cabin = Cabin.find(params[:cabin_id])
   end
 
   def show
@@ -20,7 +21,7 @@ class TodolistsController < ApplicationController
     @todolist = Todolist.new(todolist_params)
     @todolist.user = current_user
     @todolist.save
-    redirect_to todolists_path
+    respond_with @todolist
   end
 
   def update
@@ -36,6 +37,10 @@ class TodolistsController < ApplicationController
   private
     def set_todolist
       @todolist = Todolist.find(params[:id])
+    end
+
+    def set_cabin
+      @cabin = Cabin.find(params[:cabin_id])
     end
 
     def todolist_params

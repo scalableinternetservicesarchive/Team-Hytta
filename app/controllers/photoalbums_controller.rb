@@ -1,6 +1,7 @@
 class PhotoalbumsController < ApplicationController
   before_action :set_photoalbum, only: [:show, :edit, :update, :destroy]
   before_action :set_cabin, only: [:index]
+  respond_to :html, :json
 
   def index
     @photoalbums = Photoalbum.all
@@ -10,6 +11,7 @@ class PhotoalbumsController < ApplicationController
   end
 
   def new
+   #@cabin = Cabin.find(params[:cabin_id])
     @photoalbum = Photoalbum.new
   end
 
@@ -17,10 +19,11 @@ class PhotoalbumsController < ApplicationController
   end
 
   def create
+    #@cabin = Cabin.find(params[:cabin_id])
     @photoalbum = Photoalbum.new(photoalbum_params)
     @photoalbum.user = current_user
     @photoalbum.save
-    redirect_to photoalbums_path
+    respond_with @photoalbum
   end
 
   def update

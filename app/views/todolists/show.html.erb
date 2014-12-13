@@ -15,5 +15,5 @@
 <!-- buttons -->
 <div class="row container">
 	<%= link_to 'Edit', edit_todolist_path(@todolist) %> |
-	<%= link_to 'Back', todolists_path %>
+	<%= link_to 'Back', todolists_path(:cabin_id => @todolist.cabin_id) %>
 </div>

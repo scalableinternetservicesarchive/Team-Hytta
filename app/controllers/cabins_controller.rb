@@ -26,7 +26,7 @@ class CabinsController < ApplicationController
   def create
     @cabin = Cabin.new(cabin_params)
     @cabin.user = current_user
-    flash[:notice] = 'Cabin was successfully created. ' if @cabin.save
+    @cabin.save
     respond_with @cabin
   end
 
@@ -37,8 +37,8 @@ class CabinsController < ApplicationController
 
   def destroy
     @cabin.destroy
-    flash[:notice] = 'Cabin was successfully destroyed. '
-    respond_with cabins_path
+    #flash[:notice] = 'Cabin was successfully destroyed. '
+    redirect_to cabins_path
   end
 
   private
