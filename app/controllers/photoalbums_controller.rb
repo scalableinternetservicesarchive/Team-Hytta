@@ -1,9 +1,9 @@
 class PhotoalbumsController < ApplicationController
   before_action :set_photoalbum, only: [:show, :edit, :update, :destroy]
+  before_action :set_cabin, only: [:index]
 
   def index
     @photoalbums = Photoalbum.all
-    @cabin = Cabin.find(params[:cabin_id])
   end
 
   def show
@@ -36,6 +36,10 @@ class PhotoalbumsController < ApplicationController
   private
     def set_photoalbum
       @photoalbum = Photoalbum.find(params[:id])
+    end
+
+    def set_cabin
+      @cabin = Cabin.find(params[:cabin_id])
     end
 
     def photoalbum_params
