@@ -1292,3 +1292,261 @@
 2014-12-09 16:10:24,057 DEBUG test_createPostOnCabin:   Done in 0.000s
 2014-12-09 16:10:24,057 DEBUG test_createPostOnCabin: tearDown.
 
+2014-12-13 14:11:41,808 INFO test_creatUser: [test_creatUser] description not found
+2014-12-13 14:11:41,808 DEBUG test_creatUser: Starting -----------------------------------
+	
+2014-12-13 14:11:41,808 DEBUG test_creatUser: setUp
+2014-12-13 14:11:41,808 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 1: View the root URL ...
+2014-12-13 14:11:42,000 DEBUG test_creatUser:  Done in 0.192s
+2014-12-13 14:11:42,000 DEBUG test_creatUser:  Load css and images...
+2014-12-13 14:11:42,281 DEBUG test_creatUser:   Done in 0.278s
+2014-12-13 14:11:42,281 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:11:42,396 DEBUG test_creatUser:  Failed in 0.115s
+2014-12-13 14:11:42,397 DEBUG test_creatUser: tearDown.
+
+2014-12-13 14:12:17,084 INFO test_creatUser: [test_creatUser] description not found
+2014-12-13 14:12:17,084 DEBUG test_creatUser: Starting -----------------------------------
+	
+2014-12-13 14:12:17,084 DEBUG test_creatUser: setUp
+2014-12-13 14:12:17,085 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 1: View the root URL ...
+2014-12-13 14:12:17,218 DEBUG test_creatUser:  Done in 0.134s
+2014-12-13 14:12:17,219 DEBUG test_creatUser:  Load css and images...
+2014-12-13 14:12:17,445 DEBUG test_creatUser:   Done in 0.224s
+2014-12-13 14:12:17,445 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:12:17,575 DEBUG test_creatUser:  Failed in 0.130s
+2014-12-13 14:12:17,576 DEBUG test_creatUser: tearDown.
+
+2014-12-13 14:12:41,003 INFO test_creatUser: [test_creatUser] description not found
+2014-12-13 14:12:41,003 DEBUG test_creatUser: Starting -----------------------------------
+	
+2014-12-13 14:12:41,003 DEBUG test_creatUser: setUp
+2014-12-13 14:12:41,003 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 14:12:41,144 DEBUG test_creatUser:  Done in 0.141s
+2014-12-13 14:12:41,144 DEBUG test_creatUser:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+2014-12-13 14:12:41,264 DEBUG test_creatUser:  Done in 0.120s
+2014-12-13 14:12:41,264 DEBUG test_creatUser:  Load css and images...
+2014-12-13 14:12:41,469 DEBUG test_creatUser:   Done in 0.202s
+2014-12-13 14:12:41,469 DEBUG test_creatUser: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:12:41,599 DEBUG test_creatUser:  Done in 0.130s
+2014-12-13 14:12:41,600 DEBUG test_creatUser:  Load css and images...
+2014-12-13 14:12:41,602 DEBUG test_creatUser:   Done in 0.000s
+2014-12-13 14:12:41,602 DEBUG test_creatUser: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users [('user[first_name]', 'voh65q4'), ('user[last_name]', 'voh65q4'), ('user[email]', 'kkbqc6@silvestris.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', '6ZtnCutgrFzGgQm8m0+00rPZuY2auXXMwKC/YnSDD6Q='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 14:12:42,096 DEBUG test_creatUser:  Done in 0.494s
+2014-12-13 14:12:42,096 DEBUG test_creatUser:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/
+2014-12-13 14:12:42,243 DEBUG test_creatUser:  Done in 0.147s
+2014-12-13 14:12:42,243 DEBUG test_creatUser:  Load css and images...
+2014-12-13 14:12:42,503 DEBUG test_creatUser:   Done in 0.258s
+2014-12-13 14:12:42,503 DEBUG test_creatUser: tearDown.
+
+2014-12-13 14:24:29,515 INFO test_createCabin: [test_createCabin] description not found
+2014-12-13 14:24:29,516 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-13 14:24:29,516 DEBUG test_createCabin: setUp
+2014-12-13 14:24:29,516 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 14:24:29,661 DEBUG test_createCabin:  Done in 0.145s
+2014-12-13 14:24:29,662 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+2014-12-13 14:24:29,778 DEBUG test_createCabin:  Done in 0.117s
+2014-12-13 14:24:29,779 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:30,035 DEBUG test_createCabin:   Done in 0.254s
+2014-12-13 14:24:30,035 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:24:30,166 DEBUG test_createCabin:  Done in 0.131s
+2014-12-13 14:24:30,166 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:30,167 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:24:30,167 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users [('user[first_name]', '2g43q'), ('user[last_name]', '2g43q'), ('user[email]', '87f9ky@parvus.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'fzStz51VXL55uKBDfxVP2s7e+f8lPVSUE+XyQhm9NkU='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 14:24:30,502 DEBUG test_createCabin:  Done in 0.334s
+2014-12-13 14:24:30,502 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/
+2014-12-13 14:24:30,641 DEBUG test_createCabin:  Done in 0.139s
+2014-12-13 14:24:30,641 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:30,834 DEBUG test_createCabin:   Done in 0.191s
+2014-12-13 14:24:30,834 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-13 14:24:31,026 DEBUG test_createCabin:  Done in 0.192s
+2014-12-13 14:24:31,026 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:31,027 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:24:31,027 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins [('cabin[navn]', 'punctatus'), ('cabin[address]', 'Tetra arvensis folius ! domesticus stoma albus chloreus.'), ('cabin[descritpion]', 'Fuscus archaeos bradus deca mono parvus chloreus erythro arvensis fuscus.'), ('authenticity_token', 'fzStz51VXL55uKBDfxVP2s7e+f8lPVSUE+XyQhm9NkU='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-13 14:24:31,337 DEBUG test_createCabin:  Done in 0.309s
+2014-12-13 14:24:31,337 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/1
+2014-12-13 14:24:31,509 DEBUG test_createCabin:  Done in 0.172s
+2014-12-13 14:24:31,509 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:31,853 DEBUG test_createCabin:   Done in 0.341s
+2014-12-13 14:24:31,856 DEBUG test_createCabin: tearDown.
+
+2014-12-13 14:24:58,703 INFO test_createCabin: [test_createCabin] description not found
+2014-12-13 14:24:58,703 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-13 14:24:58,703 DEBUG test_createCabin: setUp
+2014-12-13 14:24:58,703 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 14:24:58,814 DEBUG test_createCabin:  Done in 0.111s
+2014-12-13 14:24:58,815 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+2014-12-13 14:24:58,937 DEBUG test_createCabin:  Done in 0.123s
+2014-12-13 14:24:58,938 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:59,146 DEBUG test_createCabin:   Done in 0.205s
+2014-12-13 14:24:59,146 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:24:59,267 DEBUG test_createCabin:  Done in 0.121s
+2014-12-13 14:24:59,268 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:59,269 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:24:59,269 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users [('user[first_name]', '88fk63'), ('user[last_name]', '88fk63'), ('user[email]', '1o2437@fuscus.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'GGB1ruByEiqWzMAe3ovI2RxdJt2I731LVt9v5tQCsyI='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 14:24:59,599 DEBUG test_createCabin:  Done in 0.330s
+2014-12-13 14:24:59,600 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/
+2014-12-13 14:24:59,720 DEBUG test_createCabin:  Done in 0.121s
+2014-12-13 14:24:59,721 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:59,850 DEBUG test_createCabin:   Done in 0.128s
+2014-12-13 14:24:59,850 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-13 14:24:59,987 DEBUG test_createCabin:  Done in 0.137s
+2014-12-13 14:24:59,987 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:24:59,988 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:24:59,988 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins [('cabin[navn]', 'minimus'), ('cabin[address]', 'Vitis phyllo, echinus major unus notos ad.'), ('cabin[descritpion]', 'Australis ortho ? obscurus dermis viridis.'), ('authenticity_token', 'GGB1ruByEiqWzMAe3ovI2RxdJt2I731LVt9v5tQCsyI='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-13 14:25:00,172 DEBUG test_createCabin:  Done in 0.183s
+2014-12-13 14:25:00,172 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/2
+2014-12-13 14:25:00,317 DEBUG test_createCabin:  Done in 0.145s
+2014-12-13 14:25:00,317 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:25:00,572 DEBUG test_createCabin:   Done in 0.253s
+2014-12-13 14:25:00,572 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins
+	Page 6: View the all cabin page ...
+2014-12-13 14:25:00,725 DEBUG test_createCabin:  Done in 0.153s
+2014-12-13 14:25:00,726 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:25:00,727 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:25:00,727 DEBUG test_createCabin: tearDown.
+
+2014-12-13 14:27:50,443 INFO test_createCabin: [test_createCabin] description not found
+2014-12-13 14:27:50,443 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-13 14:27:50,443 DEBUG test_createCabin: setUp
+2014-12-13 14:27:50,443 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 14:27:50,615 DEBUG test_createCabin:  Done in 0.172s
+2014-12-13 14:27:50,615 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+2014-12-13 14:27:50,758 DEBUG test_createCabin:  Done in 0.143s
+2014-12-13 14:27:50,758 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:51,123 DEBUG test_createCabin:   Done in 0.361s
+2014-12-13 14:27:51,123 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 14:27:51,281 DEBUG test_createCabin:  Done in 0.158s
+2014-12-13 14:27:51,281 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:51,282 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:27:51,283 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/users [('user[first_name]', 'fgaq71wa'), ('user[last_name]', 'fgaq71wa'), ('user[email]', 'cqf4m1n@diplo.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', '4rfcSH10lO4IS+VZupkg8MYnPz42pnaVNAxmzfnbgWU='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 14:27:51,591 DEBUG test_createCabin:  Done in 0.309s
+2014-12-13 14:27:51,592 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/
+2014-12-13 14:27:51,822 DEBUG test_createCabin:  Done in 0.230s
+2014-12-13 14:27:51,822 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:51,986 DEBUG test_createCabin:   Done in 0.162s
+2014-12-13 14:27:51,986 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-13 14:27:52,121 DEBUG test_createCabin:  Done in 0.135s
+2014-12-13 14:27:52,121 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:52,123 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:27:52,123 DEBUG test_createCabin: POST: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins [('cabin[navn]', 'glycis'), ('cabin[address]', 'Delorum pratensis notos sativus australis brevis, octa maculatus rubra variegatus variabilis tinctorius parvus ad folius montanus echinus folius.'), ('cabin[descritpion]', 'Sinensis novaeseelandiae unus, tres vitis ortho parvus melanus tomentosus argentatus lateralis tinctorius, campus novaeseelandiae orientalis major diplo cristatus.'), ('authenticity_token', '4rfcSH10lO4IS+VZupkg8MYnPz42pnaVNAxmzfnbgWU='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-13 14:27:52,301 DEBUG test_createCabin:  Done in 0.178s
+2014-12-13 14:27:52,301 DEBUG test_createCabin:  Load redirect link: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins/48
+2014-12-13 14:27:52,429 DEBUG test_createCabin:  Done in 0.128s
+2014-12-13 14:27:52,429 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:52,689 DEBUG test_createCabin:   Done in 0.258s
+2014-12-13 14:27:52,689 DEBUG test_createCabin: GET: http://ec2-54-69-243-111.us-west-2.compute.amazonaws.com/cabins
+	Page 6: View the all cabin page ...
+2014-12-13 14:27:52,981 DEBUG test_createCabin:  Done in 0.291s
+2014-12-13 14:27:52,981 DEBUG test_createCabin:  Load css and images...
+2014-12-13 14:27:52,997 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 14:27:52,997 DEBUG test_createCabin: tearDown.
+
+2014-12-13 15:00:19,025 INFO test_createCabin: [test_createCabin] description not found
+2014-12-13 15:00:19,026 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-13 15:00:19,026 DEBUG test_createCabin: setUp
+2014-12-13 15:00:19,026 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 15:00:19,203 DEBUG test_createCabin:  Done in 0.177s
+2014-12-13 15:00:19,203 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users/sign_up
+2014-12-13 15:00:19,414 DEBUG test_createCabin:  Done in 0.210s
+2014-12-13 15:00:19,414 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:19,720 DEBUG test_createCabin:   Done in 0.303s
+2014-12-13 15:00:19,720 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 15:00:19,868 DEBUG test_createCabin:  Done in 0.148s
+2014-12-13 15:00:19,868 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:19,870 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:00:19,870 DEBUG test_createCabin: POST: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users [('user[first_name]', 'c21fjd'), ('user[last_name]', 'c21fjd'), ('user[email]', 'pagnq@officinalis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'o61nWMcQvUvLmC0HqXPh/yLhkYpQzLDFPGplpoENjnY='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 15:00:20,354 DEBUG test_createCabin:  Done in 0.484s
+2014-12-13 15:00:20,354 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/
+2014-12-13 15:00:20,519 DEBUG test_createCabin:  Done in 0.165s
+2014-12-13 15:00:20,519 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:20,719 DEBUG test_createCabin:   Done in 0.198s
+2014-12-13 15:00:20,719 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-13 15:00:20,905 DEBUG test_createCabin:  Done in 0.185s
+2014-12-13 15:00:20,905 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:20,906 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:00:20,906 DEBUG test_createCabin: POST: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins [('cabin[navn]', 'diplo'), ('cabin[address]', 'Morphos echinus verrucosus ennea cola niger it orientalis gaster pteron trich, rubra indicus sativus cristatus mauro it maximus verrucosus.'), ('cabin[descritpion]', 'Unus biscortborealis glycis parvus occidentalis silvestris rhiza familiaris rubra vulgaris variegatus, tres tinctorius echinus officinalis.'), ('authenticity_token', 'o61nWMcQvUvLmC0HqXPh/yLhkYpQzLDFPGplpoENjnY='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-13 15:00:21,159 DEBUG test_createCabin:  Done in 0.253s
+2014-12-13 15:00:21,159 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins/1
+2014-12-13 15:00:21,347 DEBUG test_createCabin:  Done in 0.188s
+2014-12-13 15:00:21,348 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:21,678 DEBUG test_createCabin:   Done in 0.328s
+2014-12-13 15:00:21,678 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins
+	Page 6: View the all cabin page ...
+2014-12-13 15:00:21,835 DEBUG test_createCabin:  Done in 0.157s
+2014-12-13 15:00:21,836 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:00:21,837 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:00:21,837 DEBUG test_createCabin: tearDown.
+
+2014-12-13 15:06:31,613 INFO test_createCabin: [test_createCabin] description not found
+2014-12-13 15:06:31,613 DEBUG test_createCabin: Starting -----------------------------------
+	
+2014-12-13 15:06:31,613 DEBUG test_createCabin: setUp
+2014-12-13 15:06:31,614 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com
+	Page 1: View the root URL ...
+2014-12-13 15:06:31,826 DEBUG test_createCabin:  Done in 0.212s
+2014-12-13 15:06:31,826 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users/sign_up
+2014-12-13 15:06:31,978 DEBUG test_createCabin:  Done in 0.151s
+2014-12-13 15:06:31,978 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:32,285 DEBUG test_createCabin:   Done in 0.304s
+2014-12-13 15:06:32,285 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users/sign_up
+	Page 2: View the sign in page ...
+2014-12-13 15:06:32,421 DEBUG test_createCabin:  Done in 0.136s
+2014-12-13 15:06:32,421 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:32,423 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:06:32,423 DEBUG test_createCabin: POST: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/users [('user[first_name]', '7h5m9zh9'), ('user[last_name]', '7h5m9zh9'), ('user[email]', 'xy4ty9@dermis.com'), ('user[password]', 'alphabet'), ('user[password_confirmation]', 'alphabet'), ('authenticity_token', 'H1vedgoRXozHAdCRM0czvW4dYZiNMcd1X/1GX2HAijk='), ('commit', 'Sign up')]
+	Page 3: Create New User ...
+2014-12-13 15:06:32,818 DEBUG test_createCabin:  Done in 0.395s
+2014-12-13 15:06:32,818 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/
+2014-12-13 15:06:33,713 DEBUG test_createCabin:  Done in 0.895s
+2014-12-13 15:06:33,714 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:33,916 DEBUG test_createCabin:   Done in 0.201s
+2014-12-13 15:06:33,917 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins/new
+	Page 4: View the new cabin page ...
+2014-12-13 15:06:34,039 DEBUG test_createCabin:  Done in 0.123s
+2014-12-13 15:06:34,040 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:34,041 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:06:34,041 DEBUG test_createCabin: POST: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins [('cabin[navn]', 'lipsem'), ('cabin[address]', 'Aquam tres dolicho sinensis striatus oeos pelagius trich aquam glycis, variegatus sit mauro delorum platy campus.'), ('cabin[descritpion]', 'Familiaris dodeca chloreus parvus biscortborealis tetra, biscortborealis folius octa cola, dolicho chloreus archaeos tres.'), ('authenticity_token', 'H1vedgoRXozHAdCRM0czvW4dYZiNMcd1X/1GX2HAijk='), ('commit', 'Create Cabin')]
+	Page 5: Create new cabin ...
+2014-12-13 15:06:34,248 DEBUG test_createCabin:  Done in 0.207s
+2014-12-13 15:06:34,248 DEBUG test_createCabin:  Load redirect link: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins/264
+2014-12-13 15:06:34,413 DEBUG test_createCabin:  Done in 0.165s
+2014-12-13 15:06:34,414 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:34,739 DEBUG test_createCabin:   Done in 0.323s
+2014-12-13 15:06:34,739 DEBUG test_createCabin: GET: http://Team-Hytta-2-1550972996.us-west-2.elb.amazonaws.com/cabins
+	Page 6: View the all cabin page ...
+2014-12-13 15:06:54,400 DEBUG test_createCabin:  Done in 19.661s
+2014-12-13 15:06:54,401 DEBUG test_createCabin:  Load css and images...
+2014-12-13 15:06:54,522 DEBUG test_createCabin:   Done in 0.000s
+2014-12-13 15:06:54,522 DEBUG test_createCabin: tearDown.
+

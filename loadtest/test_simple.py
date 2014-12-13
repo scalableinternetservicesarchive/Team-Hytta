@@ -74,6 +74,8 @@ class Simple(FunkLoadTestCase):
             ["commit", "Create Cabin"]],
             description = "Create new cabin")
 
+        self.get(server_url + "/cabins", description= "View the all cabin page")
+
     def test_createPostOnCabin(self):
         server_url = self.server_url
         self.get(server_url, description="View the root URL")
@@ -166,14 +168,53 @@ class Simple(FunkLoadTestCase):
         auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
         todolist_title = Lipsum().getWord()
 
-        #self.post(self.server_url + "/todolists", 
+        #self.post(self.server_url + "/todolists",  #fix this! 
         #    params=[["todolist[name]", todolist_title],
         #    ["todolist[cabin_id]", created_cabin_id],
         #    ["authenticity_token", auth_token],
         #    ["commit", "Create Todolist"]],
         #    description="Create new Todolist")
 
+    def test_createPhotoalbumOnCabin(self): #not finished
+        server_url = self.server_url
+        self.get(server_url, description="View the root URL")
+        self.get(server_url + "/users/sign_up", description="View the sign in page")
 
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        email = Lipsum().getUniqWord() + "@" + Lipsum().getWord() + ".com"
+        name = Lipsum().getUniqWord()
+
+        self.post(server_url + "/users",
+            params=[["user[first_name]", name],
+            ["user[last_name]", name],
+            ["user[email]", email],
+            ["user[password]", "alphabet"],
+            ["user[password_confirmation]", "alphabet"],
+            ["authenticity_token", auth_token],
+            ["commit", "Sign up"]],
+            description = "Create New User")
+
+        self.get(server_url + "/cabins/new", description = "View the new cabin page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+
+        cabin_name = Lipsum().getWord()
+        cabin_Adr = Lipsum().getSentence()
+        cabin_desc = Lipsum().getSentence() 
+
+        self.post(self.server_url + "/cabins",
+            params=[["cabin[navn]", cabin_name],
+            ["cabin[address]", cabin_Adr],
+            ["cabin[descritpion]", cabin_desc],
+            ["authenticity_token", auth_token],
+            ["commit", "Create Cabin"]],
+            description = "Create new cabin")
+        last_url = self.getLastUrl()
+        created_cabin_id = last_url.split("/")[-1]
+
+        self.get(server_url + "/todolists?cabin_id=" + created_cabin_id, description="View the todolist page")
+        self.get(server_url + "/todolists/new?cabin_id=" + created_cabin_id, description="View upload new todolist page")
+        auth_token = extract_token(self.getBody(), 'name="authenticity_token" type="hidden" value="', '"')
+        todolist_title = Lipsum().getWord()
 
 
     def tearDown(self):
