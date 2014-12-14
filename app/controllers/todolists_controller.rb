@@ -4,7 +4,9 @@ class TodolistsController < ApplicationController
   respond_to :html, :json
 
   def index
-    @todolists = Todolist.all
+    #@todolists = Todolist.all
+    @todolists = Todolist.paginate(:page => params[:page], :per_page => 30)
+    respond_with @todolists, @cabin
   end
 
   def show

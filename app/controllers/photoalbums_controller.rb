@@ -4,7 +4,9 @@ class PhotoalbumsController < ApplicationController
   respond_to :html, :json
 
   def index
-    @photoalbums = Photoalbum.all
+    #@photoalbums = Photoalbum.all
+    @photoalbums = Photoalbum.paginate(:page => params[:page], :per_page => 30)
+    respond_with @photoalbums, @cabin
   end
 
   def show
