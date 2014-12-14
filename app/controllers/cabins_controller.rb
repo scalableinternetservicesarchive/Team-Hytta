@@ -9,7 +9,8 @@ class CabinsController < ApplicationController
   end
 
   def show
-    respond_with @cabin
+    @posts = @cabin.posts.paginate(:page => params[:page], :per_page => 30)
+    respond_with @cabin, @posts
   end
 
   def new

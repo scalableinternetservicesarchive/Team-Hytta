@@ -44,7 +44,8 @@
   </div>
 <!--Cottage Panell-->
   <div class="col-md-10">
-    <% @cabin.posts.each do |post| %>
+  <%= will_paginate @posts, :page_links => false %>
+    <% @posts.each do |post| %>
     <div class="panel panel-default">
       <div class="panel-body">
             <p><h4><%= post.title %></h4> by <%= post.user.email if post.user %></p>
