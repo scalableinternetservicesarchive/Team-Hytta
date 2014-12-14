@@ -11,4 +11,9 @@ class UsersController < ApplicationController
 
   def edit
   end
+
+  def index
+    redirect_to root_path
+  end
+
 end
