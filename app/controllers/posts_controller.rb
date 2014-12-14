@@ -25,7 +25,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user = current_user
     @post.save
-    respond_with @post.cabin
+    respond_with @post
   end
 
   def update
