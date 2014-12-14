@@ -39,8 +39,7 @@
   </div>
 <!--Cottage Panell-->
   <div class="col-md-10">
-    <% @cabins.each do |cabin| %>
-    <% if cabin.user == @user %>
+    <% @user.cabins.each do |cabin| %>
     <div class="panel panel-default">
 
       <div class="panel-body">
@@ -59,9 +58,7 @@
           <% end %>
         </div>
      </div>
-
     </div>
-    <% end %>
     <% end %>
   </div>
 </div>

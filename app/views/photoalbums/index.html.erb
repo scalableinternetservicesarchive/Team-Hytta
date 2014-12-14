@@ -14,8 +14,7 @@
 
 <div class="container">
   <div class="row">
-      <% @photoalbums.each do |photoalbum| %>
-        <% if photoalbum.cabin_id == @cabin.id %>
+      <% @cabin.photoalbums.each do |photoalbum| %>
             <div class="col-md-4">
             <div class="panel panel-default">
               <div class="panel-body">
@@ -33,7 +32,6 @@
               <%= link_to 'Destroy', photoalbum, class: 'btn btn-info', method: :delete, data: { confirm: 'Are you sure?' } %>
             </div>
           </div>
-        <% end %>
         </div>
       </div>
     <% end %>  
