@@ -3,7 +3,8 @@ class CabinsController < ApplicationController
   respond_to :html, :json
 
   def index
-    @cabins = Cabin.all
+    #@cabins = Cabin.all
+    @cabins = Cabin.paginate(:page => params[:page], :per_page => 30)
     respond_with @cabins
   end
 

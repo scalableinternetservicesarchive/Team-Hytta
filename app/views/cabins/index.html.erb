@@ -13,6 +13,7 @@
 <div class="row container">
 
 <!--Cottage Panell-->
+<%= will_paginate @cabins, :page_links => false %>
     <% @cabins.each do |cabin| %>
     <div class="panel panel-default">
       <div class="panel-body">
