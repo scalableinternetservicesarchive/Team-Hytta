@@ -5,7 +5,7 @@ class PhotoalbumsController < ApplicationController
 
   def index
     #@photoalbums = Photoalbum.all
-    @photoalbums = Photoalbum.paginate(:page => params[:page], :per_page => 30)
+    @photoalbums = @cabin.photoalbums.paginate(:page => params[:page], :per_page => 30)
     respond_with @photoalbums, @cabin
   end
 

@@ -5,7 +5,7 @@ class TodolistsController < ApplicationController
 
   def index
     #@todolists = Todolist.all
-    @todolists = Todolist.paginate(:page => params[:page], :per_page => 30)
+    @todolists = @cabin.todolists.paginate(:page => params[:page], :per_page => 30)
     respond_with @todolists, @cabin
   end
 
