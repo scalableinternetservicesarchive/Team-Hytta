@@ -40,6 +40,9 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'actionpack-action_caching'
+gem 'actionpack-page_caching'
+
 gem 'devise'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
